@@ -1,0 +1,154 @@
+basePath: /api/v1
+definitions:
+  models.AddMovie:
+    properties:
+      coverImage:
+        example: Movie Cover Image
+        type: string
+      description:
+        example: Movie Description
+        type: string
+      name:
+        example: Movie Name
+        type: string
+      url:
+        example: Movie URL
+        type: string
+    type: object
+  models.Error:
+    properties:
+      code:
+        example: 27
+        type: integer
+      message:
+        example: Error message
+        type: string
+    type: object
+  models.Message:
+    properties:
+      message:
+        example: message
+        type: string
+    type: object
+  models.Movie:
+    properties:
+      coverImage:
+        type: string
+      description:
+        type: string
+      id:
+        type: string
+      name:
+        type: string
+      url:
+        type: string
+    type: object
+  models.Token:
+    properties:
+      token:
+        example: 5bb3695b82ebac0f76e1cafa
+        type: string
+    type: object
+host: 107.113.53.47:9000
+info:
+  contact: {}
+  description: List APIs of MovieManagement Service
+  license: {}
+  termsOfService: http://swagger.io/terms/
+  title: MovieManagement Service API Document
+  version: "1.0"
+paths:
+  /login:
+    post:
+      consumes:
+      - multipart/form-data
+      description: Log in to the service
+      parameters:
+      - description: Username
+        in: formData
+        name: user
+        required: true
+        type: string
+      - description: Password
+        in: formData
+        name: password
+        required: true
+        type: string
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.Token'
+            type: object
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/models.Error'
+            type: object
+      security:
+      - ApiKeyAuth: []
+      summary: Log in to the service
+      tags:
+      - admin
+  /movies:
+    post:
+      consumes:
+      - application/json
+      description: Add a new movie
+      parameters:
+      - description: Token
+        in: header
+        name: Authorization
+        required: true
+        type: string
+      - description: Add Movie
+        in: body
+        name: user
+        required: true
+        schema:
+          $ref: '#/definitions/models.AddMovie'
+          type: object
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.Message'
+            type: object
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/models.Error'
+            type: object
+      summary: Add a new movie
+      tags:
+      - movie
+  /movies/list:
+    get:
+      consumes:
+      - application/json
+      description: List all existing Movies
+      parameters:
+      - description: Token
+        in: header
+        name: Authorization
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.Movie'
+            type: object
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/models.Error'
+            type: object
+      summary: List all existing Movies
+      tags:
+      - movie
+swagger: "2.0"

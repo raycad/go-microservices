@@ -1,0 +1,286 @@
+basePath: /api/v1
+definitions:
+  models.AddUser:
+    properties:
+      name:
+        example: User Name
+        type: string
+      password:
+        example: User Password
+        type: string
+    type: object
+  models.Error:
+    properties:
+      code:
+        example: 27
+        type: integer
+      message:
+        example: Error message
+        type: string
+    type: object
+  models.Message:
+    properties:
+      message:
+        example: message
+        type: string
+    type: object
+  models.Token:
+    properties:
+      token:
+        example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoicmF5Y2FkIiwicm9sZSI6IiIsImV4cCI6MTUzOTI0OTc3OSwiaXNzIjoic2VlZG90ZWNoIn0.lVHq8J_0vfvECbplogAOCDCNh63ivTBOhya8KE6Ew_E
+        type: string
+    type: object
+  models.User:
+    properties:
+      id:
+        example: 5bbdadf782ebac06a695a8e7
+        type: string
+      name:
+        example: raycad
+        type: string
+      password:
+        example: raycad
+        type: string
+    type: object
+host: 127.0.0.1:8808
+info:
+  contact: {}
+  description: List APIs of UserManagement Service
+  license: {}
+  termsOfService: http://swagger.io/terms/
+  title: UserManagement Service API Document
+  version: "1.0"
+paths:
+  /admin/auth:
+    post:
+      consumes:
+      - multipart/form-data
+      description: Authenticate user
+      parameters:
+      - description: Username
+        in: formData
+        name: user
+        required: true
+        type: string
+      - description: Password
+        in: formData
+        name: password
+        required: true
+        type: string
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.Token'
+            type: object
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/models.Error'
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.Error'
+            type: object
+      security:
+      - ApiKeyAuth: []
+      summary: Check user authentication
+      tags:
+      - admin
+  /users:
+    get:
+      consumes:
+      - application/json
+      description: Get a user by ID parameter
+      parameters:
+      - description: Token
+        in: header
+        name: Authorization
+        required: true
+        type: string
+      - description: User ID
+        in: query
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.User'
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.Error'
+            type: object
+      summary: Get a user by ID parameter
+      tags:
+      - user
+    patch:
+      consumes:
+      - application/json
+      description: Update an existing user
+      parameters:
+      - description: Token
+        in: header
+        name: Authorization
+        required: true
+        type: string
+      - description: User ID
+        in: body
+        name: user
+        required: true
+        schema:
+          $ref: '#/definitions/models.User'
+          type: object
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.Message'
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.Error'
+            type: object
+      summary: Update an existing user
+      tags:
+      - user
+    post:
+      consumes:
+      - application/json
+      description: Add a new user
+      parameters:
+      - description: Token
+        in: header
+        name: Authorization
+        required: true
+        type: string
+      - description: Add user
+        in: body
+        name: user
+        required: true
+        schema:
+          $ref: '#/definitions/models.AddUser'
+          type: object
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.Message'
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.Error'
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.Error'
+            type: object
+      summary: Add a new user
+      tags:
+      - user
+  /users/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: Delete a user by ID
+      parameters:
+      - description: Token
+        in: header
+        name: Authorization
+        required: true
+        type: string
+      - description: User ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.Message'
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.Error'
+            type: object
+      summary: Delete a user by ID
+      tags:
+      - user
+  /users/detail/{id}:
+    get:
+      consumes:
+      - application/json
+      description: Get a user by ID
+      parameters:
+      - description: Token
+        in: header
+        name: Authorization
+        required: true
+        type: string
+      - description: User ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.User'
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.Error'
+            type: object
+      summary: Get a user by ID
+      tags:
+      - user
+  /users/list:
+    get:
+      consumes:
+      - application/json
+      description: List all existing users
+      parameters:
+      - description: Token
+        in: header
+        name: Authorization
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/models.User'
+            type: array
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.Error'
+            type: object
+      summary: List all existing users
+      tags:
+      - user
+swagger: "2.0"

@@ -1,0 +1,18 @@
+{
+    "port": ":8808",
+    "enableGinConsoleLog": true,
+    "enableGinFileLog": false,
+
+    "logFilename": "logs/server.log",
+    "logMaxSize": 10,
+    "logMaxBackups": 10,
+    "logMaxAge": 30,
+
+    "mgAddrs": "127.0.0.1:27017",
+    "mgDbName": "go-microservices",
+    "mgDbUsername": "",
+    "mgDbPassword": "",
+
+    "jwtSecretPassword": "raycad",
+    "issuer": "seedotech"
+}
