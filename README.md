@@ -188,11 +188,15 @@ $ ./traefik -c traefik.toml
 ![Traefik Dashboard](./docs/images/traefik_api_gateway.png)
 
 Now, assume that the **Gateway IP** is **192.168.1.8**, then, when sending a request to the gateway like:
+
 `GET http://192.168.1.8:7777/seedotech.usermanagement/api/v1/movies/list`
 
 **Gateway** will route request to
+
 `http://192.168.1.9:8808/api/v1/movies/list`
+
 **OR**
+
 `http://192.168.1.10:8808/api/v1/movies/list`
 
 ***
