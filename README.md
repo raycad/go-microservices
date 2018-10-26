@@ -99,6 +99,8 @@ $ go run main.go
 
 <em>http://localhost:8808/swagger/index.html</em>
 
+**NOTE:** Using the default admin account **admin/admin** to authenticate the services
+
 ![Communication Flows](./docs/images/swagger_user_rest_api.png)
 
 ![Communication Flows](./docs/images/swagger_user_rest_models.png)
@@ -113,6 +115,8 @@ $ go run main.go
 * <strong>Movie Swagger</strong>
 
 <em>http://localhost:8809/swagger/index.html</em>
+
+**NOTE:** Using the default admin account **admin/admin** to authenticate the services
 
 ![Communication Flows](./docs/images/swagger_movie_rest_api.png)
 
