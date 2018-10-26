@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Level" version="4">
+  <OBJECT>
+    <ID name="Level" mc="Infrastructure.EnumeratedPropertyType" uid="fd1e7e3d-1c25-4e43-a8d0-23ad542da716"/>
+    <PID name="LocalModule" mc="Infrastructure.ModuleComponent" uid="c7d36424-3484-41b5-8aab-3fdc929873bd"/>
+    <ATTRIBUTES>
+      <ATT name="BaseType">Enumerate</ATT>
+      <ATT name="Name"><![CDATA[Level]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Litteral">
+        <OBJECT>
+          <ID name="Weak" mc="Infrastructure.PropertyEnumerationLitteral" uid="99a2fd6e-5426-4c9d-b823-2feac174c834"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Weak]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Medium" mc="Infrastructure.PropertyEnumerationLitteral" uid="7ce8d723-e3a9-4a47-84b6-543070c8d1e3"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Medium]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Strong" mc="Infrastructure.PropertyEnumerationLitteral" uid="3aad52d0-8375-4a4e-a7b0-19bd688890ac"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Strong]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Very strong" mc="Infrastructure.PropertyEnumerationLitteral" uid="910b6d7c-085b-44bd-a518-90c1328fb66a"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Very strong]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Analyst" version="4">
+  <OBJECT>
+    <ID name="Analyst" mc="Infrastructure.Profile" uid="49121241-ca7a-4e7c-8a96-195f92f639e1"/>
+    <PID name="LocalModule" mc="Infrastructure.ModuleComponent" uid="c7d36424-3484-41b5-8aab-3fdc929873bd"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[Analyst]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedReference">
+        <COMPID name="Analyst.AnalystContainer" mc="Infrastructure.MetaclassReference" uid="7edc60f2-bc8c-4b29-8c5a-062fe6041dc0"/>
+        <COMPID name="Analyst.BusinessRuleContainer" mc="Infrastructure.MetaclassReference" uid="c822b7d0-14d0-4475-97cf-dc5b245980c3"/>
+        <COMPID name="Analyst.Dictionary" mc="Infrastructure.MetaclassReference" uid="5d3861bf-50ed-4751-acc6-0c6a6f8e89cd"/>
+        <COMPID name="Analyst.GoalContainer" mc="Infrastructure.MetaclassReference" uid="1a3e275f-0722-490d-964e-f5534b5c9583"/>
+        <COMPID name="Analyst.RequirementContainer" mc="Infrastructure.MetaclassReference" uid="15f3a32f-071e-4625-8feb-71220ca1a2e0"/>
+        <COMPID name="Analyst.RequirementContainer" mc="Infrastructure.MetaclassReference" uid="eb58276e-751a-4486-8728-d1d59b15efda"/>
+        <COMPID name="Analyst.RequirementContainer" mc="Infrastructure.MetaclassReference" uid="0bbdccda-5a04-494f-84b5-c2c3e5394a10"/>
+        <COMPID name="Analyst.RequirementContainer" mc="Infrastructure.MetaclassReference" uid="b77a87fd-5e12-46e7-84c0-363846acfc4b"/>
+        <COMPID name="Analyst.RequirementContainer" mc="Infrastructure.MetaclassReference" uid="d13be600-47df-4a0e-b192-be61aee2d074"/>
+        <COMPID name="Analyst.RequirementContainer" mc="Infrastructure.MetaclassReference" uid="15cc23d5-cce1-4294-b791-2723ce44c654"/>
+        <COMPID name="Analyst.RequirementContainer" mc="Infrastructure.MetaclassReference" uid="7f2ff646-0a9b-4b87-aa87-cb1d27610fe5"/>
+        <COMPID name="Analyst.RiskContainer" mc="Infrastructure.MetaclassReference" uid="3a0c2e82-7709-4373-840b-046f65966b4d"/>
+        <COMPID name="Analyst.TestContainer" mc="Infrastructure.MetaclassReference" uid="b36dcb3d-bc9f-4ebe-83cd-76035f5e117a"/>
+        <COMPID name="Analyst.TestContainer" mc="Infrastructure.MetaclassReference" uid="0299965c-6270-4698-bb92-f54c7eeaf304"/>
+        <COMPID name="Analyst.TestContainer" mc="Infrastructure.MetaclassReference" uid="972db76e-1190-4c06-a5dd-40c7807bdb1f"/>
+        <COMPID name="Analyst.KPIContainer" mc="Infrastructure.MetaclassReference" uid="e1ececd5-c4f0-4a74-ad9b-f2e4ed0cbaff"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

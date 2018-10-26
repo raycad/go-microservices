@@ -1,0 +1,39 @@
+{"level":"debug","msg":"map[id:1 title:GIN01 done:false]","time":"2018-09-21T12:16:25+07:00"}
+{"level":"debug","msg":"map[id:1 title:GIN01 done:false]","time":"2018-09-21T12:16:26+07:00"}
+{"level":"debug","msg":"map[id:1 title:GIN01 done:false]","time":"2018-09-21T12:16:27+07:00"}
+{"level":"debug","msg":"map[id:1 title:GIN01 done:false]","time":"2018-09-21T12:17:03+07:00"}
+{"level":"debug","msg":"map[id:1 title:GIN01 done:false]","time":"2018-09-21T12:17:04+07:00"}
+{"level":"debug","msg":"map[id:1 title:GIN01 done:false]","time":"2018-09-21T12:17:20+07:00"}
+{"level":"debug","msg":"map[id:1 title:GIN01 done:false]","time":"2018-09-21T12:17:20+07:00"}
+{"level":"debug","msg":"map[id:1 title:GIN01 done:false]","time":"2018-09-21T13:10:10+07:00"}
+{"level":"debug","msg":"map[title:GIN01 done:false id:1]","time":"2018-09-21T13:10:23+07:00"}
+{"level":"debug","msg":"map[done:false id:1 title:GIN01]","time":"2018-09-21T13:10:24+07:00"}
+{"level":"debug","msg":"map[done:false id:1 title:GIN01]","time":"2018-09-21T13:10:25+07:00"}
+{"level":"debug","msg":"map[title:GIN01 done:false id:1]","time":"2018-09-21T15:01:48+07:00"}
+{"level":"debug","msg":"map[id:1 title:GIN01 done:false]","time":"2018-09-21T15:01:49+07:00"}
+{"level":"debug","msg":"map[id:1 title:GIN01 done:false]","time":"2018-09-21T15:01:50+07:00"}
+{"level":"debug","msg":"map[id:1 title:GIN01 done:false]","time":"2018-09-21T15:12:24+07:00"}
+{"level":"debug","msg":"map[title:GIN01 done:false id:1]","time":"2018-09-21T15:12:25+07:00"}
+{"level":"debug","msg":"map[id:1 title:GIN01 done:false]","time":"2018-09-21T15:12:25+07:00"}
+{"level":"debug","msg":"Can't connect to mongo, go error %vno reachable servers","time":"2018-09-25T03:33:14Z"}
+{"level":"debug","msg":"[ERROR]: \u003cnil\u003e","time":"2018-09-25T04:33:38Z"}
+{"level":"debug","msg":"Registered a new user = seedotech, password = test","time":"2018-09-26T05:21:45Z"}
+{"level":"debug","msg":"Registered a new user = seedotech, password = test","time":"2018-09-26T05:21:57Z"}
+{"level":"debug","msg":"Registered a new user = seedotech, password = test","time":"2018-09-26T05:21:59Z"}
+{"level":"debug","msg":"Registered a new user = seedotech, password = test","time":"2018-09-26T05:23:16Z"}
+{"level":"debug","msg":"[ERROR]: E11000 duplicate key error collection: go-microservices.user index: _name_ dup key: { : \"seedotech\" }","time":"2018-09-26T05:23:17Z"}
+{"level":"debug","msg":"[ERROR]: E11000 duplicate key error collection: go-microservices.user index: _name_ dup key: { : \"seedotech\" }","time":"2018-09-26T05:23:20Z"}
+{"level":"debug","msg":"[ERROR]: E11000 duplicate key error collection: go-microservices.user index: _name_ dup key: { : \"seedotech\" }","time":"2018-09-26T06:07:00Z"}
+{"level":"debug","msg":"[ERROR]: E11000 duplicate key error collection: go-microservices.user index: _name_ dup key: { : \"seedotech\" }","time":"2018-09-26T06:07:18Z"}
+{"level":"debug","msg":"Registered a new user = raycad, password = raycad","time":"2018-09-26T06:08:31Z"}
+{"level":"debug","msg":"[ERROR]: E11000 duplicate key error collection: go-microservices.user index: _name_ dup key: { : \"raycad\" }","time":"2018-09-26T06:08:34Z"}
+{"level":"debug","msg":"Registered a new user = raycad, password = raycad","time":"2018-10-01T11:00:36Z"}
+{"level":"debug","msg":"[ERROR]: E11000 duplicate key error collection: go-microservices.users index: _name_ dup key: { : \"raycad\" }","time":"2018-10-01T11:00:48Z"}
+{"level":"debug","msg":"[ERROR]: E11000 duplicate key error collection: go-microservices.users index: _name_ dup key: { : \"raycad\" }","time":"2018-10-01T11:00:57Z"}
+{"level":"debug","msg":"[ERROR]: E11000 duplicate key error collection: go-microservices.users index: _name_ dup key: { : \"raycad\" }","time":"2018-10-01T11:00:58Z"}
+{"level":"debug","msg":"Registered a new user = seedotech, password = raycad","time":"2018-10-01T11:01:07Z"}
+{"level":"debug","msg":"[ERROR]: not found","time":"2018-10-01T11:01:16Z"}
+{"level":"debug","msg":"[ERROR]: not found","time":"2018-10-01T11:02:21Z"}
+{"level":"debug","msg":"Registered a new user = seedotech, password = raycad","time":"2018-10-01T11:02:33Z"}
+{"level":"debug","msg":"[ERROR]: E11000 duplicate key error collection: go-microservices.users index: _name_ dup key: { : \"seedotech\" }","time":"2018-10-01T11:02:35Z"}
+{"level":"debug","msg":"Registered a new user = raycad, password = raycad","time":"2018-10-01T11:02:48Z"}

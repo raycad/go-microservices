@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="refine" version="4">
+  <OBJECT>
+    <ID name="refine" mc="Infrastructure.Stereotype" uid="01ec12fc-0000-021f-0000-000000000000"/>
+    <PID name="Analyst" mc="Infrastructure.Profile" uid="1be2e3fc-27ca-11e1-8d9c-002564c97630"/>
+    <ATTRIBUTES>
+      <ATT name="Image"></ATT>
+      <ATT name="Icon"><![CDATA[res/icon/dependency_refine.png]]></ATT>
+      <ATT name="IsHidden">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="LabelKey"><![CDATA[%stereotype.refine.label]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[Infrastructure.Dependency]]></ATT>
+      <ATT name="Name"><![CDATA[refine]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

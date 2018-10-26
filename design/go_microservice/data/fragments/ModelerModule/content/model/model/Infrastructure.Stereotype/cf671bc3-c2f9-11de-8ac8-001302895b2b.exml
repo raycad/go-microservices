@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="UML2DestroyObjectAction" version="4">
+  <OBJECT>
+    <ID name="UML2DestroyObjectAction" mc="Infrastructure.Stereotype" uid="cf671bc3-c2f9-11de-8ac8-001302895b2b"/>
+    <PID name="XMI" mc="Infrastructure.Profile" uid="01ec045c-0000-3739-0000-000000000000"/>
+    <ATTRIBUTES>
+      <ATT name="Image"></ATT>
+      <ATT name="Icon"></ATT>
+      <ATT name="IsHidden">true</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="LabelKey"><![CDATA[%stereotype.UML2DestroyObjectAction.label]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[Standard.OpaqueAction]]></ATT>
+      <ATT name="Name"><![CDATA[UML2DestroyObjectAction]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

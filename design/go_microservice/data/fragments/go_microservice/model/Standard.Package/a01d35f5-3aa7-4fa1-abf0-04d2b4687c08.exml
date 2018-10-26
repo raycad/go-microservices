@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="sd" version="4">
+  <OBJECT>
+    <ID name="sd" mc="Standard.Package" uid="a01d35f5-3aa7-4fa1-abf0-04d2b4687c08"/>
+    <PID name="go_microservice" mc="Standard.Project" uid="833db0dc-f0d3-4b42-baa1-b1e684749a5f"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[sd]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="authentication" mc="Standard.Interaction" uid="5de95ba2-7499-4c38-aaf7-0dadfcc8ff2e"/>
+        <COMPID name="recommendation_service" mc="Standard.Interaction" uid="7b139b7f-4c13-47bb-86b5-820196f82b1c"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

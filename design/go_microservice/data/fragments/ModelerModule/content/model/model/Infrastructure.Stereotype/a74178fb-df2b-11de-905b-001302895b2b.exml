@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="UML2EndDestructionDataReference" version="4">
+  <OBJECT>
+    <ID name="UML2EndDestructionDataReference" mc="Infrastructure.Stereotype" uid="a74178fb-df2b-11de-905b-001302895b2b"/>
+    <PID name="XMI" mc="Infrastructure.Profile" uid="01ec045c-0000-3739-0000-000000000000"/>
+    <ATTRIBUTES>
+      <ATT name="Image"></ATT>
+      <ATT name="Icon"></ATT>
+      <ATT name="IsHidden">true</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="LabelKey"><![CDATA[%stereotype.UML2EndDestructionDataReference.label]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[Infrastructure.Dependency]]></ATT>
+      <ATT name="Name"><![CDATA[UML2EndDestructionDataReference]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="DefinedTagType">
+        <OBJECT>
+          <ID name="IsDestroyDuplicates" mc="Infrastructure.TagType" uid="6f99afff-df2d-11de-905b-001302895b2b"/>
+          <ATTRIBUTES>
+            <ATT name="ParamNumber"><![CDATA[0]]></ATT>
+            <ATT name="IsQualified">false</ATT>
+            <ATT name="BelongToPrototype">false</ATT>
+            <ATT name="IsHidden">false</ATT>
+            <ATT name="LabelKey"><![CDATA[%tagtype.IsDestroyDuplicates.label]]></ATT>
+            <ATT name="Name"><![CDATA[IsDestroyDuplicates]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

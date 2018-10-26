@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="daos" version="4">
+  <OBJECT>
+    <ID name="daos" mc="Standard.Package" uid="c92b72f7-d0f1-479c-a276-ad2bcc7670c7"/>
+    <PID name="cd" mc="Standard.Package" uid="9920168b-3a00-48c8-90ef-2e3045a0ed96"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[daos]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="User" mc="Standard.Class" uid="804997f9-4fb9-45d5-b9db-f96b37ff7e7b"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

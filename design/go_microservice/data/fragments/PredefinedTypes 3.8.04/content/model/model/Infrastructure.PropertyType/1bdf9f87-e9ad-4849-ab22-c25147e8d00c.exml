@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="MultiElement" version="4">
+  <OBJECT>
+    <ID name="MultiElement" mc="Infrastructure.PropertyType" uid="1bdf9f87-e9ad-4849-ab22-c25147e8d00c"/>
+    <PID name="LocalModule" mc="Infrastructure.ModuleComponent" uid="c7d36424-3484-41b5-8aab-3fdc929873bd"/>
+    <ATTRIBUTES>
+      <ATT name="BaseType">MultiElement</ATT>
+      <ATT name="Name"><![CDATA[MultiElement]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

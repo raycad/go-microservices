@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="State" version="4">
+  <OBJECT>
+    <ID name="State" mc="Infrastructure.Stereotype" uid="c2d2a1ec-2c29-453c-a79c-19e4f2d27f13"/>
+    <PID name="Methodology" mc="Infrastructure.Profile" uid="4719c76c-91a4-4508-84fd-cef0458f4f3e"/>
+    <ATTRIBUTES>
+      <ATT name="Image"></ATT>
+      <ATT name="Icon"></ATT>
+      <ATT name="IsHidden">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="LabelKey"><![CDATA[%stereotype.State.label]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[Infrastructure.MethodologicalLink]]></ATT>
+      <ATT name="Name"><![CDATA[State]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Parent">
+        <ID name="AbstractMethodologicalLink" mc="Infrastructure.Stereotype" uid="216c1c7f-0ffc-453c-9559-41aeff7e3510"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

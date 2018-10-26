@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Communication Interaction Communication diagram" version="4">
+  <OBJECT>
+    <ID name="Communication Interaction Communication diagram" mc="Standard.CommunicationDiagram" uid="1dc3a9c5-a470-465f-a292-165610bad64f"/>
+    <PID name="Communication Interaction" mc="Standard.CommunicationInteraction" uid="a8103b60-f3f9-474a-b869-c3bcc547e443"/>
+    <ATTRIBUTES>
+      <ATT name="UiDataVersion">104</ATT>
+      <ATT name="UiData"><![CDATA[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]]></ATT>
+      <ATT name="Name"><![CDATA[Communication Interaction Communication diagram]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Represented">
+        <REFOBJ>
+          <ID name="API Gateway" mc="Standard.CommunicationNode" uid="84b3c564-e5da-4eb2-9c32-49bfe0d5a41b"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="User Service" mc="Standard.CommunicationNode" uid="669ed8b7-475c-4429-8e22-c56860e2ec2a"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="CommunicationChannel" mc="Standard.CommunicationChannel" uid="c6f2df53-f352-4230-9b3f-aec9ca011b4d"/>
+        </REFOBJ>
+      </LINK>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="3d75bcc6-5864-45ea-973e-fe039f0b4f06"/>
+          <ATTRIBUTES>
+            <ATT name="Content"></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -6,10 +6,12 @@
 package utils
 
 import (
+	"errors"
 	"time"
 
 	"../common"
 	jwt_lib "github.com/dgrijalva/jwt-go"
+	"gopkg.in/mgo.v2/bson"
 )
 
 // SdtClaims defines the custom claims
@@ -19,8 +21,11 @@ type SdtClaims struct {
 	jwt_lib.StandardClaims
 }
 
+type Utils struct {
+}
+
 // GenerateJWT generates token from the given information
-func GenerateJWT(name string, role string) (string, error) {
+func (u *Utils) GenerateJWT(name string, role string) (string, error) {
 	claims := SdtClaims{
 		name,
 		role,
@@ -34,4 +39,13 @@ func GenerateJWT(name string, role string) (string, error) {
 	tokenString, err := token.SignedString([]byte(common.Config.JwtSecretPassword))
 
 	return tokenString, err
+}
+
+// ValidateObjectID checks the given ID if it's an object id or not
+func (u *Utils) ValidateObjectID(id string) error {
+	if bson.IsObjectIdHex(id) != true {
+		return errors.New(common.ErrNotObjectIDHex)
+	}
+
+	return nil
 }

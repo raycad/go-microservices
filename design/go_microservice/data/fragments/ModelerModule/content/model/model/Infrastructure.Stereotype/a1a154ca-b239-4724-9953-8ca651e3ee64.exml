@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="kpi_propertyset" version="4">
+  <OBJECT>
+    <ID name="kpi_propertyset" mc="Infrastructure.Stereotype" uid="a1a154ca-b239-4724-9953-8ca651e3ee64"/>
+    <PID name="Analyst" mc="Infrastructure.Profile" uid="1be2e3fc-27ca-11e1-8d9c-002564c97630"/>
+    <ATTRIBUTES>
+      <ATT name="Image"></ATT>
+      <ATT name="Icon"></ATT>
+      <ATT name="IsHidden">true</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="LabelKey"><![CDATA[%stereotype.kpi_propertyset.label]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[Infrastructure.PropertyTableDefinition]]></ATT>
+      <ATT name="Name"><![CDATA[kpi_propertyset]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

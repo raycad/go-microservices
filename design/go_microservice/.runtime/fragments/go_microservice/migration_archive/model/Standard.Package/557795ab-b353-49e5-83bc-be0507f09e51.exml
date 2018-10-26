@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="uc" version="4">
+  <OBJECT>
+    <ID name="uc" mc="Standard.Package" uid="557795ab-b353-49e5-83bc-be0507f09e51"/>
+    <PID name="go_microservice" mc="Standard.Project" uid="833db0dc-f0d3-4b42-baa1-b1e684749a5f"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[uc]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Register new account" mc="Standard.UseCase" uid="867cb0f1-7704-41a1-beb9-d79d192bdfe0"/>
+        <COMPID name="Sign in" mc="Standard.UseCase" uid="7d403a55-d040-47f6-b5ad-9fc7c021c3d4"/>
+        <COMPID name="Change password" mc="Standard.UseCase" uid="ddc0675b-bf2c-4004-8fe6-746adfef32e8"/>
+        <COMPID name="Sign out" mc="Standard.UseCase" uid="84d29ca9-d732-48f7-9c36-19ba07fd283f"/>
+        <COMPID name="User" mc="Standard.Actor" uid="bf5da7ce-e7e5-4240-9eed-663a36d7d65b"/>
+        <COMPID name="Upload movie" mc="Standard.UseCase" uid="e10a84d0-7aaa-4fe9-a56a-17917e605d13"/>
+        <COMPID name="Delete movie" mc="Standard.UseCase" uid="a8476e66-7724-4c61-b490-c9507ea148a7"/>
+        <COMPID name="Update movie" mc="Standard.UseCase" uid="1c909ea2-335e-4877-9526-54688ed084e6"/>
+        <COMPID name="Publish movie" mc="Standard.UseCase" uid="d2d453f6-fc48-48c0-ae2a-70ff7d05fd7d"/>
+        <COMPID name="List movie" mc="Standard.UseCase" uid="54d8cf94-8679-460a-94e3-0d8c9331da09"/>
+        <COMPID name="List movie by user" mc="Standard.UseCase" uid="6dd07747-c470-4b9d-9590-7e8e54d2acdb"/>
+        <COMPID name="List movie by genre" mc="Standard.UseCase" uid="e6d67d7b-ddc4-4c59-9bce-5f3d080f4191"/>
+        <COMPID name="List movie by key word" mc="Standard.UseCase" uid="be6b16e8-aaca-4cee-b697-739ffd06a5b5"/>
+        <COMPID name="User" mc="Standard.Actor" uid="0b7630e5-d6fd-46be-9ed3-0bd61956a5c3"/>
+        <COMPID name="Rate movie" mc="Standard.UseCase" uid="a2f18ca5-cf3a-479f-a0f5-819d627aeb43"/>
+        <COMPID name="Play movie" mc="Standard.UseCase" uid="095ed0b3-1b9b-4fc2-9bd1-4ff57f32ee59"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="uc Use Case diagram" mc="Standard.UseCaseDiagram" uid="0bca6857-bdc7-4a28-8ecf-2ec1efa03926"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

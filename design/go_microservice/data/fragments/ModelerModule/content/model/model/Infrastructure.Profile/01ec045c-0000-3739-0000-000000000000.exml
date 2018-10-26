@@ -1,0 +1,111 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="XMI" version="4">
+  <OBJECT>
+    <ID name="XMI" mc="Infrastructure.Profile" uid="01ec045c-0000-3739-0000-000000000000"/>
+    <PID name="ModelerModule" mc="Infrastructure.ModuleComponent" uid="00000000-0000-2710-0000-000000000000"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[XMI]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="DefinedStereotype">
+        <COMPID name="UML2Abstraction" mc="Infrastructure.Stereotype" uid="b355cc6c-c4aa-11df-b100-001302895b2b"/>
+        <COMPID name="UML2ActionInputPin" mc="Infrastructure.Stereotype" uid="0bd72298-5d08-11df-a996-001302895b2b"/>
+        <COMPID name="UML2AddStructuralFeatureValueAction" mc="Infrastructure.Stereotype" uid="994fc1e3-c2f9-11de-8ac8-001302895b2b"/>
+        <COMPID name="UML2AddVariableValueAction" mc="Infrastructure.Stereotype" uid="89326f2e-c2fc-11de-8ac8-001302895b2b"/>
+        <COMPID name="UML2Argument" mc="Infrastructure.Stereotype" uid="86630901-a400-4353-8b38-6db0846d1e38"/>
+        <COMPID name="UML2AssociationReference" mc="Infrastructure.Stereotype" uid="ee97796b-de99-11de-905b-001302895b2b"/>
+        <COMPID name="UML2Body" mc="Infrastructure.Stereotype" uid="76f275f9-32d9-11e0-91f3-0027103f347c"/>
+        <COMPID name="UML2BodyOutput" mc="Infrastructure.Stereotype" uid="fdbc7d78-32c7-11e0-91f3-0027103f347c"/>
+        <COMPID name="UML2BroadcastSignalAction" mc="Infrastructure.Stereotype" uid="edc05471-5d08-11df-a996-001302895b2b"/>
+        <COMPID name="UML2ClassifierReference" mc="Infrastructure.Stereotype" uid="ed95fa9b-de99-11de-905b-001302895b2b"/>
+        <COMPID name="UML2ClassifierTemplateParameter" mc="Infrastructure.Stereotype" uid="4a427283-5d09-11df-a996-001302895b2b"/>
+        <COMPID name="UML2ClearAssociationAction" mc="Infrastructure.Stereotype" uid="89927bbf-c2f9-11de-8ac8-001302895b2b"/>
+        <COMPID name="UML2ClearStructuralFeatureAction" mc="Infrastructure.Stereotype" uid="9fb5321d-c2fc-11de-8ac8-001302895b2b"/>
+        <COMPID name="UML2ClearVariableAction" mc="Infrastructure.Stereotype" uid="b071b025-c2fc-11de-8ac8-001302895b2b"/>
+        <COMPID name="UML2Collection" mc="Infrastructure.Stereotype" uid="3e7476cd-bea2-4e73-a1c3-625c341464cd"/>
+        <COMPID name="UML2CommunicationPath" mc="Infrastructure.Stereotype" uid="8ed6276e-5821-11df-be59-001302895b2b"/>
+        <COMPID name="UML2ComponentRealization" mc="Infrastructure.Stereotype" uid="99bf7919-5d09-11df-a996-001302895b2b"/>
+        <COMPID name="UML2ConnectableElementTemplateParameter" mc="Infrastructure.Stereotype" uid="ff6e0375-5d09-11df-a996-001302895b2b"/>
+        <COMPID name="UML2CreateLinkAction" mc="Infrastructure.Stereotype" uid="67694a37-c2f9-11de-8ac8-001302895b2b"/>
+        <COMPID name="UML2CreateLinkObjectAction" mc="Infrastructure.Stereotype" uid="f8e58a85-c2fa-11de-8ac8-001302895b2b"/>
+        <COMPID name="UML2CreateObjectAction" mc="Infrastructure.Stereotype" uid="5582e283-c2f9-11de-8ac8-001302895b2b"/>
+        <COMPID name="UML2CreationEvent" mc="Infrastructure.Stereotype" uid="4edcbbef-5d0a-11df-a996-001302895b2b"/>
+        <COMPID name="UML2Decider" mc="Infrastructure.Stereotype" uid="27ac6d48-32c8-11e0-91f3-0027103f347c"/>
+        <COMPID name="UML2Deployment" mc="Infrastructure.Stereotype" uid="6faa55e3-5d0b-11df-a996-001302895b2b"/>
+        <COMPID name="UML2DeploymentSpecification" mc="Infrastructure.Stereotype" uid="8c44d73d-5d0b-11df-a996-001302895b2b"/>
+        <COMPID name="UML2DestroyLinkAction" mc="Infrastructure.Stereotype" uid="744f6321-c2f9-11de-8ac8-001302895b2b"/>
+        <COMPID name="UML2DestroyObjectAction" mc="Infrastructure.Stereotype" uid="cf671bc3-c2f9-11de-8ac8-001302895b2b"/>
+        <COMPID name="UML2DestructionEvent" mc="Infrastructure.Stereotype" uid="c0f03827-5d0b-11df-a996-001302895b2b"/>
+        <COMPID name="UML2Device" mc="Infrastructure.Stereotype" uid="6f3c6234-52b8-11df-a320-001302895b2b"/>
+        <COMPID name="UML2EndCreationDataReference" mc="Infrastructure.Stereotype" uid="ee06097f-de99-11de-905b-001302895b2b"/>
+        <COMPID name="UML2EndData_Reference" mc="Infrastructure.Stereotype" uid="5d167c0f-df53-11de-b2b1-001302895b2b"/>
+        <COMPID name="UML2EndDestructionDataReference" mc="Infrastructure.Stereotype" uid="a74178fb-df2b-11de-905b-001302895b2b"/>
+        <COMPID name="UML2Exception" mc="Infrastructure.Stereotype" uid="b966e108-5fbe-4990-b7cf-94d258a5c3ff"/>
+        <COMPID name="UML2ExceptionHandler" mc="Infrastructure.Stereotype" uid="1b7fd53f-205e-11df-948e-001302895b2b"/>
+        <COMPID name="UML2ExceptionTypeReference" mc="Infrastructure.Stereotype" uid="4e477e48-35b4-11df-9280-001302895b2b"/>
+        <COMPID name="UML2ExecutionEnvironment" mc="Infrastructure.Stereotype" uid="8e76c95f-5821-11df-be59-001302895b2b"/>
+        <COMPID name="UML2ExecutionEvent" mc="Infrastructure.Stereotype" uid="15d2108f-5d0c-11df-a996-001302895b2b"/>
+        <COMPID name="UML2ExpansionNode" mc="Infrastructure.Stereotype" uid="1b1ba62d-205e-11df-948e-001302895b2b"/>
+        <COMPID name="UML2ExpansionRegion" mc="Infrastructure.Stereotype" uid="07111319-1fd7-11df-948e-001302895b2b"/>
+        <COMPID name="UML2Extension" mc="Infrastructure.Stereotype" uid="4b4745a9-5d0c-11df-a996-001302895b2b"/>
+        <COMPID name="UML2ExtensionEnd" mc="Infrastructure.Stereotype" uid="770df309-5d0c-11df-a996-001302895b2b"/>
+        <COMPID name="UML2First" mc="Infrastructure.Stereotype" uid="37d0688a-c308-11de-8ac8-001302895b2b"/>
+        <COMPID name="UML2GeneralizationSet" mc="Infrastructure.Stereotype" uid="40400bbd-0b5d-11df-8680-001302895b2b"/>
+        <COMPID name="UML2InputValue" mc="Infrastructure.Stereotype" uid="a81a2a04-07b3-4a26-8b1e-5b4ebaa67990"/>
+        <COMPID name="UML2InsertAt" mc="Infrastructure.Stereotype" uid="ec22d8ff-de86-11de-905b-001302895b2b"/>
+        <COMPID name="UML2InstanceValue" mc="Infrastructure.Stereotype" uid="5791cd76-03ec-11e2-9c63-0027103f347d"/>
+        <COMPID name="UML2Interaction " mc="Infrastructure.Stereotype" uid="021863a9-f3db-11df-8ada-0027103f347c"/>
+        <COMPID name="UML2InteractionOverviewDiagram " mc="Infrastructure.Stereotype" uid="e4358003-f3da-11df-8ada-0027103f347c"/>
+        <COMPID name="UML2LoopVariableInput" mc="Infrastructure.Stereotype" uid="7a7f049a-6b5f-4db9-9f79-8e327ca90297"/>
+        <COMPID name="UML2MethodReference" mc="Infrastructure.Stereotype" uid="e445c33b-de99-11de-905b-001302895b2b"/>
+        <COMPID name="UML2Node" mc="Infrastructure.Stereotype" uid="1a4b1794-3302-4d19-9d02-077990211db2"/>
+        <COMPID name="UML2Object" mc="Infrastructure.Stereotype" uid="f82bed81-afcc-41fc-b014-b9ce92bb5377"/>
+        <COMPID name="UML2OperationTemplateParameter" mc="Infrastructure.Stereotype" uid="07ba6521-5d0d-11df-a996-001302895b2b"/>
+        <COMPID name="UML2PropertyType" mc="Infrastructure.Stereotype" uid="68c63e60-70d6-11e0-872f-0027103f347c"/>
+        <COMPID name="UML2ProtocolConformance" mc="Infrastructure.Stereotype" uid="3edfb381-5d0d-11df-a996-001302895b2b"/>
+        <COMPID name="UML2RaiseExceptionAction" mc="Infrastructure.Stereotype" uid="d09356f1-c2fc-11de-8ac8-001302895b2b"/>
+        <COMPID name="UML2ReadExtentAction" mc="Infrastructure.Stereotype" uid="c4b3add1-c2f9-11de-8ac8-001302895b2b"/>
+        <COMPID name="UML2ReadIsClassifierObjectAction" mc="Infrastructure.Stereotype" uid="e4c6c55f-c2fc-11de-8ac8-001302895b2b"/>
+        <COMPID name="UML2ReadLinkAction" mc="Infrastructure.Stereotype" uid="6e2770bf-c2f9-11de-8ac8-001302895b2b"/>
+        <COMPID name="UML2ReadLinkObjectEndAction" mc="Infrastructure.Stereotype" uid="f9061fa3-c2fc-11de-8ac8-001302895b2b"/>
+        <COMPID name="UML2ReadLinkObjectEndQualifierAction" mc="Infrastructure.Stereotype" uid="06edcdd9-c2fd-11de-8ac8-001302895b2b"/>
+        <COMPID name="UML2ReadSelfAction" mc="Infrastructure.Stereotype" uid="120a35e7-c2fd-11de-8ac8-001302895b2b"/>
+        <COMPID name="UML2ReadStructuralFeatureAction" mc="Infrastructure.Stereotype" uid="b9654705-c2f9-11de-8ac8-001302895b2b"/>
+        <COMPID name="UML2ReadVariableAction" mc="Infrastructure.Stereotype" uid="1abd18db-c2fd-11de-8ac8-001302895b2b"/>
+        <COMPID name="UML2Reception" mc="Infrastructure.Stereotype" uid="a46b20b8-26ab-11df-ac88-001302895b2b"/>
+        <COMPID name="UML2ReclassifyObjectAction" mc="Infrastructure.Stereotype" uid="229bc921-c2fd-11de-8ac8-001302895b2b"/>
+        <COMPID name="UML2RedefinableTemplateSignature" mc="Infrastructure.Stereotype" uid="90a0e341-5d0d-11df-a996-001302895b2b"/>
+        <COMPID name="UML2ReduceAction" mc="Infrastructure.Stereotype" uid="2eb4ec1b-c2fd-11de-8ac8-001302895b2b"/>
+        <COMPID name="UML2RemoveAt" mc="Infrastructure.Stereotype" uid="407d1bab-d29f-4f92-b12f-01283c1cc7eb"/>
+        <COMPID name="UML2RemoveStructuralFeatureAction" mc="Infrastructure.Stereotype" uid="35b84299-c2fd-11de-8ac8-001302895b2b"/>
+        <COMPID name="UML2RemoveVariableValueAction" mc="Infrastructure.Stereotype" uid="435869cb-c2fd-11de-8ac8-001302895b2b"/>
+        <COMPID name="UML2ReplyAction" mc="Infrastructure.Stereotype" uid="c6a579b6-5d0d-11df-a996-001302895b2b"/>
+        <COMPID name="UML2ReplyValue" mc="Infrastructure.Stereotype" uid="bdfb2aae-89a6-49b6-9a0d-3a5e4519cb31"/>
+        <COMPID name="UML2Request" mc="Infrastructure.Stereotype" uid="e0ff915d-8d3f-4da8-84be-5aed471a16c5"/>
+        <COMPID name="UML2Result" mc="Infrastructure.Stereotype" uid="8914ba10-818c-4439-8e2b-89671c2288bc"/>
+        <COMPID name="UML2ReturnInformation" mc="Infrastructure.Stereotype" uid="0936024c-9d51-4bc0-99b5-e8f72ae60007"/>
+        <COMPID name="UML2Second" mc="Infrastructure.Stereotype" uid="3f03c5f1-c308-11de-8ac8-001302895b2b"/>
+        <COMPID name="UML2SendObjectAction" mc="Infrastructure.Stereotype" uid="52d7cccb-c2fd-11de-8ac8-001302895b2b"/>
+        <COMPID name="UML2SequenceNode" mc="Infrastructure.Stereotype" uid="fca54004-5d0d-11df-a996-001302895b2b"/>
+        <COMPID name="UML2SetUp" mc="Infrastructure.Stereotype" uid="86eada10-32d9-11e0-91f3-0027103f347c"/>
+        <COMPID name="UML2Signal" mc="Infrastructure.Stereotype" uid="33ea7558-fb93-11df-8b5e-0027103f347c"/>
+        <COMPID name="UML2StartClassifierBehaviorAction" mc="Infrastructure.Stereotype" uid="5d357779-c2fd-11de-8ac8-001302895b2b"/>
+        <COMPID name="UML2StartObjectBehaviorAction" mc="Infrastructure.Stereotype" uid="d4d4a0b8-fb19-4b78-bc9e-e04ad77087f8"/>
+        <COMPID name="UML2StereotypeProperty" mc="Infrastructure.Stereotype" uid="bae91a3b-7009-11e0-a462-0027103f347c"/>
+        <COMPID name="UML2StructuralFeatureReference" mc="Infrastructure.Stereotype" uid="ed0bb1c3-de99-11de-905b-001302895b2b"/>
+        <COMPID name="UML2Target" mc="Infrastructure.Stereotype" uid="aa99ee06-c495-11de-ada1-001302895b2b"/>
+        <COMPID name="UML2TemplateSignature" mc="Infrastructure.Stereotype" uid="554cb8bb-5d0e-11df-a996-001302895b2b"/>
+        <COMPID name="UML2TestIdentityAction" mc="Infrastructure.Stereotype" uid="6a3f6989-c2fd-11de-8ac8-001302895b2b"/>
+        <COMPID name="UML2UnmarshallAction" mc="Infrastructure.Stereotype" uid="76c174ab-c2fd-11de-8ac8-001302895b2b"/>
+        <COMPID name="UML2Value" mc="Infrastructure.Stereotype" uid="eb8f06b7-de86-11de-905b-001302895b2b"/>
+        <COMPID name="UML2ValueSpecificationAction" mc="Infrastructure.Stereotype" uid="1c0bf642-a90f-11de-8613-001302895b2b"/>
+        <COMPID name="UML2Variable" mc="Infrastructure.Stereotype" uid="de38398e-c746-11e1-8624-0027103f347d"/>
+      </COMP>
+      <COMP relation="OwnedReference">
+        <COMPID name="Infrastructure.ModelElement" mc="Infrastructure.MetaclassReference" uid="01ec045c-0000-10a1-0000-000000000000"/>
+        <COMPID name="Standard.AssociationEnd" mc="Infrastructure.MetaclassReference" uid="7a804dc3-44ec-11e0-8f73-0027103f347c"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

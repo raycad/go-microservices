@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="user" version="4">
+  <OBJECT>
+    <ID name="user" mc="Standard.Artifact" uid="4496b796-d7dc-466c-8ed4-4db4dad267c0"/>
+    <PID name="go_microservice" mc="Standard.Package" uid="7ccec2ac-ab0b-49ba-9e87-dbe565ed23eb"/>
+    <ATTRIBUTES>
+      <ATT name="FileName"></ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[user]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Extension">
+        <FOREIGNID name="directory" mc="Infrastructure.Stereotype" uid="6432b987-256f-4121-9428-a89d364c2cef"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

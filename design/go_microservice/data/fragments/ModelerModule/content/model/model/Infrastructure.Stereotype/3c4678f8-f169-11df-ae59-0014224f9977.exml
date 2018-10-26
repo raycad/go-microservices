@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="PatternParameter" version="4">
+  <OBJECT>
+    <ID name="PatternParameter" mc="Infrastructure.Stereotype" uid="3c4678f8-f169-11df-ae59-0014224f9977"/>
+    <PID name="TemplateProfile" mc="Infrastructure.Profile" uid="d7ea54fa-8913-11df-8dda-0014224f9977"/>
+    <ATTRIBUTES>
+      <ATT name="Image"></ATT>
+      <ATT name="Icon"></ATT>
+      <ATT name="IsHidden">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="LabelKey"><![CDATA[%stereotype.PatternParameter.label]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[Standard.UmlModelElement]]></ATT>
+      <ATT name="Name"><![CDATA[PatternParameter]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="DefinedTagType">
+        <OBJECT>
+          <ID name="PatternParameter.Name" mc="Infrastructure.TagType" uid="f2db899a-f169-11df-ae59-0014224f9977"/>
+          <ATTRIBUTES>
+            <ATT name="ParamNumber"><![CDATA[1]]></ATT>
+            <ATT name="IsQualified">false</ATT>
+            <ATT name="BelongToPrototype">false</ATT>
+            <ATT name="IsHidden">false</ATT>
+            <ATT name="LabelKey"><![CDATA[%tagtype.PatternParameter.Name.label]]></ATT>
+            <ATT name="Name"><![CDATA[PatternParameter.Name]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="PatternParameter.Label" mc="Infrastructure.TagType" uid="f739b2fd-f169-11df-ae59-0014224f9977"/>
+          <ATTRIBUTES>
+            <ATT name="ParamNumber"><![CDATA[1]]></ATT>
+            <ATT name="IsQualified">false</ATT>
+            <ATT name="BelongToPrototype">false</ATT>
+            <ATT name="IsHidden">false</ATT>
+            <ATT name="LabelKey"><![CDATA[%tagtype.PatternParameter.Label.label]]></ATT>
+            <ATT name="Name"><![CDATA[PatternParameter.Label]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,75 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Analyst.AnalystElement" version="4">
+  <OBJECT>
+    <ID name="Analyst.AnalystElement" mc="Infrastructure.MetaclassReference" uid="2d98d6ca-5644-418a-9bae-94b5362d3c51"/>
+    <PID name="Analyst" mc="Infrastructure.Profile" uid="1be2e3fc-27ca-11e1-8d9c-002564c97630"/>
+    <ATTRIBUTES>
+      <ATT name="ReferencedClassName"><![CDATA[Analyst.AnalystElement]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="DefinedResourceType">
+        <OBJECT>
+          <ID name="business_rule" mc="Infrastructure.ResourceType" uid="9ede8a0a-2176-11e1-a46e-002564c97630"/>
+          <ATTRIBUTES>
+            <ATT name="IsHidden">true</ATT>
+            <ATT name="LabelKey"><![CDATA[%documenttype.business_rule.label]]></ATT>
+            <ATT name="Icon"></ATT>
+            <ATT name="Image"></ATT>
+            <ATT name="Name"><![CDATA[business_rule]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="goal" mc="Infrastructure.ResourceType" uid="9f737ada-2176-11e1-a46e-002564c97630"/>
+          <ATTRIBUTES>
+            <ATT name="IsHidden">true</ATT>
+            <ATT name="LabelKey"><![CDATA[%documenttype.goal.label]]></ATT>
+            <ATT name="Icon"></ATT>
+            <ATT name="Image"></ATT>
+            <ATT name="Name"><![CDATA[goal]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="term" mc="Infrastructure.ResourceType" uid="316a4eff-219e-11e1-b44e-002564c97630"/>
+          <ATTRIBUTES>
+            <ATT name="IsHidden">true</ATT>
+            <ATT name="LabelKey"><![CDATA[%documenttype.term.label]]></ATT>
+            <ATT name="Icon"></ATT>
+            <ATT name="Image"></ATT>
+            <ATT name="Name"><![CDATA[term]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="requirement" mc="Infrastructure.ResourceType" uid="9f290272-2176-11e1-a46e-002564c97630"/>
+          <ATTRIBUTES>
+            <ATT name="IsHidden">true</ATT>
+            <ATT name="LabelKey"><![CDATA[%documenttype.requirement.label]]></ATT>
+            <ATT name="Icon"></ATT>
+            <ATT name="Image"></ATT>
+            <ATT name="Name"><![CDATA[requirement]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="generic_analyst" mc="Infrastructure.ResourceType" uid="489f9f73-e53a-45c4-a7bf-1445ad481c7b"/>
+          <ATTRIBUTES>
+            <ATT name="IsHidden">true</ATT>
+            <ATT name="LabelKey"><![CDATA[%documenttype.generic_analyst.label]]></ATT>
+            <ATT name="Icon"></ATT>
+            <ATT name="Image"></ATT>
+            <ATT name="Name"><![CDATA[generic_analyst]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

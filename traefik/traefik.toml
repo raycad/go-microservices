@@ -1,0 +1,67 @@
+################################################################
+# Entrypoints configuration
+################################################################
+
+defaultEntryPoints = ["http", "https"]
+[entryPoints]
+    [entryPoints.http]
+    address = ":7777"
+
+[api]
+    entryPoint = "http"
+    dashboard = true
+
+[file]
+
+[frontends]
+    [frontends.usermanagement]
+		entrypoints = ["http"]		
+		backend="usermanagement"
+		[frontends.usermanagement.routes.matchUrl]
+			rule="PathPrefixStrip:/seedotech.usermanagement"
+
+	[frontends.moviemanagement]
+		entrypoints = ["http"]		
+		backend="moviemanagement"
+		[frontends.moviemanagement.routes.matchUrl]
+			rule="PathPrefixStrip:/seedotech.moviemanagement"
+
+[backends]
+    [backends.usermanagement]
+        [backends.usermanagement.servers.main1]
+			url = "http://192.168.1.9:8808"
+			weight = 3
+
+		[backends.usermanagement.servers.main2]
+			url = "http://192.168.1.10:8808"
+			weight = 1
+
+	[backends.moviemanagement]
+        [backends.moviemanagement.servers.main1]
+			url = "http://192.168.1.9:8809"
+			weight = 3
+
+		[backends.moviemanagement.servers.main2]
+			url = "http://192.168.1.10:8809"
+			weight = 1
+
+		[backends.moviemanagement.servers.main3]
+			url = "http://192.168.1.12:8809"
+			weight = 2	
+			
+# Try: 
+# http://192.168.1.8:7777/dashboard to show traefik dashboard
+# http://192.168.1.8:7777/seedotech.usermanagement/api/v1/admin/auth <-> http://192.168.1.9:8808/api/v1/admin/auth
+# http://192.168.1.8:7777/seedotech.moviemanagement/api/v1/movies/list <-> http://192.168.1.9:8809/api/v1/movies/list
+
+################################################################
+# Traefik logs configuration
+################################################################
+
+logLevel = "DEBUG"
+
+[traefikLog]
+	filePath = "logs/traefik.log"
+
+[accessLog]
+	filePath = "logs/access.log"

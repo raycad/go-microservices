@@ -8,7 +8,7 @@
         "license": {},
         "version": "1.0"
     },
-    "host": "107.113.53.47:9000",
+    "host": "107.113.53.47:8809",
     "basePath": "/api/v1",
     "paths": {
         "/login": {

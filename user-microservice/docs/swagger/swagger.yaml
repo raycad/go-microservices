@@ -42,7 +42,7 @@ definitions:
         example: raycad
         type: string
     type: object
-host: 127.0.0.1:8808
+host: 107.113.53.47:8808
 info:
   contact: {}
   description: List APIs of UserManagement Service

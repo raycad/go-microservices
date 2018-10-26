@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="MultiString" version="4">
+  <OBJECT>
+    <ID name="MultiString" mc="Infrastructure.PropertyType" uid="fd461312-91e1-4589-a042-c814e1f53e6a"/>
+    <PID name="LocalModule" mc="Infrastructure.ModuleComponent" uid="c7d36424-3484-41b5-8aab-3fdc929873bd"/>
+    <ATTRIBUTES>
+      <ATT name="BaseType">MultiString</ATT>
+      <ATT name="Name"><![CDATA[MultiString]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

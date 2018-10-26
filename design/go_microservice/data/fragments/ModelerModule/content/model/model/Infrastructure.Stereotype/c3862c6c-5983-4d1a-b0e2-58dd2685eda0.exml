@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Called" version="4">
+  <OBJECT>
+    <ID name="Called" mc="Infrastructure.Stereotype" uid="c3862c6c-5983-4d1a-b0e2-58dd2685eda0"/>
+    <PID name="Methodology" mc="Infrastructure.Profile" uid="4719c76c-91a4-4508-84fd-cef0458f4f3e"/>
+    <ATTRIBUTES>
+      <ATT name="Image"></ATT>
+      <ATT name="Icon"></ATT>
+      <ATT name="IsHidden">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="LabelKey"><![CDATA[%stereotype.Called.label]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[Infrastructure.MethodologicalLink]]></ATT>
+      <ATT name="Name"><![CDATA[Called]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Parent">
+        <ID name="AbstractMethodologicalLink" mc="Infrastructure.Stereotype" uid="216c1c7f-0ffc-453c-9559-41aeff7e3510"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

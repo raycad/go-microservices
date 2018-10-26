@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="databases" version="4">
+  <OBJECT>
+    <ID name="databases" mc="Standard.Package" uid="2e3b4321-dc5d-4f0c-805f-352a83be3bcf"/>
+    <PID name="cd" mc="Standard.Package" uid="9920168b-3a00-48c8-90ef-2e3045a0ed96"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[databases]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="MongoDB" mc="Standard.Class" uid="1ee2b128-6664-4457-8aa4-77aed05032c3"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

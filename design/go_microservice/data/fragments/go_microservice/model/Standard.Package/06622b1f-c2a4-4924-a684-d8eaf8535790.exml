@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="utils" version="4">
+  <OBJECT>
+    <ID name="utils" mc="Standard.Package" uid="06622b1f-c2a4-4924-a684-d8eaf8535790"/>
+    <PID name="cd" mc="Standard.Package" uid="9920168b-3a00-48c8-90ef-2e3045a0ed96"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[utils]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Utils" mc="Standard.Class" uid="360fcdf0-68f9-4fc7-8cb5-265cf924deae"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,108 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Extern Requirement" version="4">
+  <OBJECT>
+    <ID name="Extern Requirement" mc="Infrastructure.PropertyTableDefinition" uid="897d11ed-d82c-4037-9a24-9b1b9e56cd3a"/>
+    <PID name="Analyst.TestContainer" mc="Infrastructure.MetaclassReference" uid="972db76e-1190-4c06-a5dd-40c7807bdb1f"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[Extern Requirement]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Owned">
+        <OBJECT>
+          <ID name="Resource Location" mc="Infrastructure.PropertyDefinition" uid="c883f260-6eed-43ee-961a-717d50e68bd1"/>
+          <ATTRIBUTES>
+            <ATT name="IsEditable">false</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[Resource Location]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <ID name="Text" mc="Infrastructure.PropertyType" uid="01a40888-0000-002a-0000-000000000000"/>
+            </LINK>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.Note" uid="9acbf852-8c96-4eb4-9f6a-35e8f41cba64"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[This property contains an external reference to access the requirement definition in its native environment (external tool).
+For example, a URL that displays the requirement definition in a browser.]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Type" mc="Infrastructure.PropertyDefinition" uid="988e2d28-204b-4199-ae2d-94c4535d161a"/>
+          <ATTRIBUTES>
+            <ATT name="IsEditable">false</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[Type]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <ID name="Text" mc="Infrastructure.PropertyType" uid="01a40888-0000-002a-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Origin" mc="Infrastructure.PropertyDefinition" uid="539abdc5-5e45-47af-a4f5-138de502d3bb"/>
+          <ATTRIBUTES>
+            <ATT name="IsEditable">false</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[Origin]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <ID name="Text" mc="Infrastructure.PropertyType" uid="01a40888-0000-002a-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="External Id" mc="Infrastructure.PropertyDefinition" uid="a458fede-9113-4c56-9a46-2b0494e2c1e4"/>
+          <ATTRIBUTES>
+            <ATT name="IsEditable">false</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[External Id]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <ID name="Text" mc="Infrastructure.PropertyType" uid="01a40888-0000-002a-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="test_propertyset" mc="Infrastructure.Stereotype" uid="859f8b76-5acc-4a9c-a5eb-973467388b13"/>
+      </LINK>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="eee19f0e-e6a8-47d2-bc26-28fbccd89fb2"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[<p>Extern Requirements are meant to reference requirements not managed by Modelio, but by an external tool.</p>
+]]></ATT>
+            <ATT name="MimeType"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

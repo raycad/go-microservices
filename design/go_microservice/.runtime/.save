@@ -1,0 +1,5 @@
+#Fri Oct 26 21:12:24 ICT 2018
+org.modelio.diagram.editor.OpenedDiagrams3='user_management' {68e61c2e-5633-4b86-8319-ec041e3358ab} Standard.ClassDiagram
+org.modelio.diagram.editor.OpenedDiagrams2='movies' {0bca6857-bdc7-4a28-8ecf-2ec1efa03926} Standard.UseCaseDiagram
+org.modelio.diagram.editor.OpenedDiagrams1='recommendation_service' {be6a63e7-8d27-4eb7-b3e2-4b9e0f700256} Standard.SequenceDiagram
+org.modelio.diagram.editor.OpenedDiagrams0='authentication' {28322fb6-f077-4ce6-a28b-473df717332e} Standard.SequenceDiagram

@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ArchiMate" version="4">
+  <OBJECT>
+    <ID name="ArchiMate" mc="Infrastructure.Profile" uid="9e140139-914b-4721-9558-385b550e28ca"/>
+    <PID name="ModelerModule" mc="Infrastructure.ModuleComponent" uid="00000000-0000-2710-0000-000000000000"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[ArchiMate]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedReference">
+        <COMPID name="Archimate.Element" mc="Infrastructure.MetaclassReference" uid="0a139a09-a6d0-4671-a1f1-f5a17fe0f869"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

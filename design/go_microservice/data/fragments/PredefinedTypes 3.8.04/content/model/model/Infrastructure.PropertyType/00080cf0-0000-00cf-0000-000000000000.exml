@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="MultiText" version="4">
+  <OBJECT>
+    <ID name="MultiText" mc="Infrastructure.PropertyType" uid="00080cf0-0000-00cf-0000-000000000000"/>
+    <PID name="LocalModule" mc="Infrastructure.ModuleComponent" uid="c7d36424-3484-41b5-8aab-3fdc929873bd"/>
+    <ATTRIBUTES>
+      <ATT name="BaseType">Text</ATT>
+      <ATT name="Name"><![CDATA[MultiText]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

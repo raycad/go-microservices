@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Standard.BpmnBaseElement" version="4">
+  <OBJECT>
+    <ID name="Standard.BpmnBaseElement" mc="Infrastructure.MetaclassReference" uid="aeb07ec3-af96-4069-af14-0436082805ca"/>
+    <PID name="default" mc="Infrastructure.Profile" uid="007004e8-0000-0282-0000-000000000000"/>
+    <ATTRIBUTES>
+      <ATT name="ReferencedClassName"><![CDATA[Standard.BpmnBaseElement]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="DefinedTagType">
+        <OBJECT>
+          <ID name="userDiagramImage" mc="Infrastructure.TagType" uid="df51d048-0ab9-48fd-8432-78e73a9a9ec4"/>
+          <ATTRIBUTES>
+            <ATT name="ParamNumber"><![CDATA[1]]></ATT>
+            <ATT name="IsQualified">false</ATT>
+            <ATT name="BelongToPrototype">false</ATT>
+            <ATT name="IsHidden">false</ATT>
+            <ATT name="LabelKey"><![CDATA[%tagtype.userDiagramImage.label]]></ATT>
+            <ATT name="Name"><![CDATA[userDiagramImage]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

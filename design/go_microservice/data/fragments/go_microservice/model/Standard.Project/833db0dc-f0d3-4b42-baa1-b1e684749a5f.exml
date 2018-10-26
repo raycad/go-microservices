@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="go_microservice" version="4">
+  <OBJECT>
+    <ID name="go_microservice" mc="Standard.Project" uid="833db0dc-f0d3-4b42-baa1-b1e684749a5f"/>
+    <ATTRIBUTES>
+      <ATT name="ProjectContext"></ATT>
+      <ATT name="ProjectDescr"></ATT>
+      <ATT name="Name"><![CDATA[go_microservice]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Model">
+        <COMPID name="uc" mc="Standard.Package" uid="557795ab-b353-49e5-83bc-be0507f09e51"/>
+        <COMPID name="sd" mc="Standard.Package" uid="a01d35f5-3aa7-4fa1-abf0-04d2b4687c08"/>
+        <COMPID name="cd" mc="Standard.Package" uid="9920168b-3a00-48c8-90ef-2e3045a0ed96"/>
+      </COMP>
+      <COMP relation="DiagramRoot">
+        <COMPID name="go_microservice" mc="Infrastructure.DiagramSet" uid="824063d4-156f-45d8-97cc-d60a1710bc49"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

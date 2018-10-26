@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Test Kind" version="4">
+  <OBJECT>
+    <ID name="Test Kind" mc="Infrastructure.EnumeratedPropertyType" uid="9de3f89f-1f06-49c6-81dd-70fef0827247"/>
+    <PID name="LocalModule" mc="Infrastructure.ModuleComponent" uid="c7d36424-3484-41b5-8aab-3fdc929873bd"/>
+    <ATTRIBUTES>
+      <ATT name="BaseType">Enumerate</ATT>
+      <ATT name="Name"><![CDATA[Test Kind]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Litteral">
+        <OBJECT>
+          <ID name="Integration" mc="Infrastructure.PropertyEnumerationLitteral" uid="c19d42f2-ad80-411d-91cc-f309d0579615"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Integration]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Regression" mc="Infrastructure.PropertyEnumerationLitteral" uid="de4757f9-5668-4506-93cb-b71b7a62c9a0"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Regression]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Validation" mc="Infrastructure.PropertyEnumerationLitteral" uid="d983972a-1936-48e7-bedc-1a37027f39a1"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Validation]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

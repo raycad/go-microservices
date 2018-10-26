@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Test State" version="4">
+  <OBJECT>
+    <ID name="Test State" mc="Infrastructure.EnumeratedPropertyType" uid="22ea1bb3-4c78-4727-95a9-71e65513e8e7"/>
+    <PID name="LocalModule" mc="Infrastructure.ModuleComponent" uid="c7d36424-3484-41b5-8aab-3fdc929873bd"/>
+    <ATTRIBUTES>
+      <ATT name="BaseType">Enumerate</ATT>
+      <ATT name="Name"><![CDATA[Test State]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Litteral">
+        <OBJECT>
+          <ID name="Draft" mc="Infrastructure.PropertyEnumerationLitteral" uid="e7594f4d-61b9-4e6e-9130-1db79da883a9"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Draft]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Ready" mc="Infrastructure.PropertyEnumerationLitteral" uid="5a93bc54-16eb-4f6d-99ea-e1059383323a"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Ready]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="To be reworked" mc="Infrastructure.PropertyEnumerationLitteral" uid="988f770a-6005-4dea-96a1-e48d90d417b5"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[To be reworked]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Future" mc="Infrastructure.PropertyEnumerationLitteral" uid="409ae268-2c52-417b-bba0-734842cbace6"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Future]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Final" mc="Infrastructure.PropertyEnumerationLitteral" uid="0d24c3d4-69ed-4acb-a681-b37ff71b885d"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Final]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Obsolete" mc="Infrastructure.PropertyEnumerationLitteral" uid="cf6ae5fc-24da-4753-a7a9-61c027f123a2"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Obsolete]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

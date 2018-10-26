@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Process BPMN Process Design diagram" version="4">
+  <OBJECT>
+    <ID name="Process BPMN Process Design diagram" mc="Standard.BpmnProcessDesignDiagram" uid="92528a99-2b33-4be6-867d-6d9e762a12eb"/>
+    <PID name="Process" mc="Standard.BpmnProcess" uid="cfb63f47-b65f-49d0-9eb5-faddb8acba2f"/>
+    <ATTRIBUTES>
+      <ATT name="UiDataVersion">32</ATT>
+      <ATT name="UiData"><![CDATA[eJztXG13qjgQ/iscz36F8qqy9vaettrenlp1tXfv2U89gUTLFogLsa3/fsOLraUKARHdLd80kkkmeWYy82Tw9PurY3PPyPMt7H5rSILY4L6fnQ6Nv5FJOAvSpgZHlnP0rYG9meBgiGwLC9ACMw84AoIWwZ5gzB1XQDZykEv81Y++MPewiXwfIt+aucK1c0EfG0Vt3bCtGz3Z4BzwN/Ye3qYhNs5O6YNz5JEl5wKHjm6DJV6QLiCA/vYnsBconpa7sO3GydnpyarDp64TsrRR44NScppSfvC8L5jYQ0LUl2F+l8A3AURwNVjvlYzRlHGUARUR9+TQK+kaN3SO4cfgw13Uk1OE14SiJ5FKacp7yAYEQTqXxLrdBU3cc9ASLBFwIfCgsG2LOF3W5DbQdV42FIVXDdTk280W5JtQR62mDCQZGenbYAOf3Lr4xe0DA9mJ2UyIZ7mzxlk8Nncxuhtwqy/RTLh45U5Pwo6pSmMb3biX2Jlj3yJ0y7aMxiDq8tGyoYcCCX3LJx9QpOQ2jRfsPU1t/EKN4Vf8sXrwq6zgp6Jel4UtIIB/ZGs1aMsE7WqnDAyXOwJYyw3g4JtPgEfQM/0e+/RJ0NALGnYC85hOC7izAG3xDkuy1JFksaMoHU3JjfPm3p18tRB/X2ZOkloI6EqLB6pJgd3URN5AFOdtQ2rKpqgDXcxYLyZghyOWCN3hi4vggO7EjrhtpeJ2hVUTOw52BTtQUAiEUrgGJ22kcblIVQOMylpHFnPDtF2tO27WWGXC6oSqbNsWYcGq/4hfHizzk6wLTAcD7tsSTYHto3RdQ1FPaEkjBViCNALMpwefIA/hkuZmb9iDpCziLZKi3mC2hny97ONn5FkO8JaBhynZvsVOeAop+U8hSazt+xjt+w5Y7raj6H3NoqMnA8dS/hw5+IZcuA7jngv3E0O1O0qzaAwl7T9TrjaIWq0yZ7TbKhI1lQeSofIqVDTemEoa31KQqQFotiAAJcCWjneEAZSUnroeIoLSwghKLhJBSRVntFIN1Tp+OoL4SSqWv285d44yeGLO4WvLrsyyy4yc0jP5bQgmwH+K0XtPP5YdMYliR1bEji521GQ0zQBZ5nz+PxIxBSvMibqoy+LU4Jttpc2rsjnl9abU5kUKWa1lmnq7FKAGYx1juFQsU03AdL8Othha5YqzU2odNWYLe9cckJWL5aQuffAR0Z3zYuAGU/kRNhzglrbC5DOZddS4zH9X+n8I4zeE3nuO4uX818grS51iTD5Y6lXYcABLZc7Aa0s9Bkv9dHJ8DtcTPXrOnCwnC2MUXW/vbpMD7JYus4/xfHcpI+AB2840bwZJE/TPghqsBUqQdQ5/YHN3MQF8kOuDDfgpIC3peYTYohOSb1yCZoFfWmVYW004C4Ybo+ldR113ZOmUykZiNHwq/on64i6agoVNwqqtXtS6O1+a1EXN76KrplLqSD/DT984YBZR6V8ktqqKIs3hRcp3WOyz6Fvuk78xdyvGivnhaWOiuMAwvKaNm66KFBquzyiV1Fpzi9R92FQtOvwIkEeWISd44Zno3DUfsZcYNJ11+TwoCIX4dPAxWE5sCwLDXklmmAm0plOKYrpcCTR0LTpSiJIVHhSlIxW4aO8in2zSVEllYQ6qqdaRk7Q9g6LB5scoYowvxxR3yLu13KRL6rkL53emrOIWLX+7xK5L50Y1iATewDdNhuP7H8Pr4eC8n+GCQkCOwVNycbIzIwK8GSJsXRlWccMprqTSOntllxPdgmLXSe+Pn73BZe+qP/z1MB7+vL8ZXN8Nu73Kt3BPRS5r3pNTZNQyZBXysmIavGoAnddVTeJNSYGmoch620hGPEViDIZQIPKYCVykUmUfPUj4a+A60MoJMKAkgvbqhY0DV2VHk4mD68PULEVTuPbA/NEyL+nWJtPX1YbuobYt/eIt9fRJoIa1DOQLo6akBGM/eNl+w1QQI+iVRAFAML07MP8Il1SW73DJcSHKUknN9MvPh5XtOcQXOLNYc2IHWG6U/9U5ce6ceJOsTSSXkkoFbUg33r0CNeErD4TRGbDfI7U+NgFhyz2mcfdk5oEXxvqNtqClL8oiI2PPqCJ8zuieVYWYPD8K3v0opWX6PThD1wvqBQ7gSaureKmdKIsTnQU4SA0A1ncvL8vywRm8u4CeC+fYyuMJskw4wwNkmTCf0R99ohpy+dOTMDpK4xgDfo+RX9xaybX+2m46SXQAVlBNrzHZDyuo5sh0K+bK2sXIsm2soJojO6tYU7EQ/VmzgntiBdUKyy9qVnA9OJAMqOot1OJFWabBgWIAvi0hjUd6WzKbEtSnYkZR5j5ZQZX1Nrvmd74Iv/OZA1RzJINfFSMlvq+xH5xkv9KzDz5QLfA/DEfLB6oV/w+Dmizh+VKnVc0HHhEfqO5EAdR8YHl8oFZajn9APlCrrkahdqKl84FaXn6l5gMr5AMzGZOLWdcDL3Tb+2CJEoSSxkYowUiATyO2Zfh2yQeJ1biTfL2O5/8CrSSGVjbYvRb653/1xg8X55e31+Phz0G3nPc0WJK+tf3bWHCqsV3s18DYJzDuh6OyEcFWB71J4x3rov8FtG7mZA==]]></ATT>
+      <ATT name="Name"><![CDATA[Process BPMN Process Design diagram]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Represented">
+        <REFOBJ>
+          <ID name="Start" mc="Standard.BpmnStartEvent" uid="117ea937-a4c3-4650-be99-8b162c09a903"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="End" mc="Standard.BpmnEndEvent" uid="b884e054-a1b4-4d35-bf15-73ec5adc7daa"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="Task" mc="Standard.BpmnTask" uid="090920fb-6838-42cf-9618-0d3557cc98aa"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="Standard.BpmnSequenceFlow" uid="32e7b24d-23cb-4ba9-9451-c13dcb3298b8"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="Standard.BpmnSequenceFlow" uid="1bd497e7-022b-43ba-81e5-e981c61d9f06"/>
+        </REFOBJ>
+      </LINK>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="9599bc11-9f83-4733-aab8-cde467a8fd8a"/>
+          <ATTRIBUTES>
+            <ATT name="Content"></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

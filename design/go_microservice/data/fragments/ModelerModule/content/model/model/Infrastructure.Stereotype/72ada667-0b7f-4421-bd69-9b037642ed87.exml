@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="JyMatrix" version="4">
+  <OBJECT>
+    <ID name="JyMatrix" mc="Infrastructure.Stereotype" uid="72ada667-0b7f-4421-bd69-9b037642ed87"/>
+    <PID name="default" mc="Infrastructure.Profile" uid="007004e8-0000-0282-0000-000000000000"/>
+    <ATTRIBUTES>
+      <ATT name="Image"></ATT>
+      <ATT name="Icon"><![CDATA[res/icon/jymatrix.png]]></ATT>
+      <ATT name="IsHidden">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="LabelKey"><![CDATA[%stereotype.JyMatrix.label]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[Infrastructure.MatrixDefinition]]></ATT>
+      <ATT name="Name"><![CDATA[JyMatrix]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

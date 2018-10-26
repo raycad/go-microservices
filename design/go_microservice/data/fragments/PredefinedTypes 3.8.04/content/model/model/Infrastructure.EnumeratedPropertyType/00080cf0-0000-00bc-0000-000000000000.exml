@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Benefit" version="4">
+  <OBJECT>
+    <ID name="Benefit" mc="Infrastructure.EnumeratedPropertyType" uid="00080cf0-0000-00bc-0000-000000000000"/>
+    <PID name="LocalModule" mc="Infrastructure.ModuleComponent" uid="c7d36424-3484-41b5-8aab-3fdc929873bd"/>
+    <ATTRIBUTES>
+      <ATT name="BaseType">Enumerate</ATT>
+      <ATT name="Name"><![CDATA[Benefit]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Litteral">
+        <OBJECT>
+          <ID name="Minor" mc="Infrastructure.PropertyEnumerationLitteral" uid="00080cf0-0000-00bf-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Minor]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Major" mc="Infrastructure.PropertyEnumerationLitteral" uid="00080cf0-0000-00be-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Major]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Critical" mc="Infrastructure.PropertyEnumerationLitteral" uid="00080cf0-0000-00bd-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Critical]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,106 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="default" version="4">
+  <OBJECT>
+    <ID name="default" mc="Infrastructure.Profile" uid="007004e8-0000-0282-0000-000000000000"/>
+    <PID name="ModelerModule" mc="Infrastructure.ModuleComponent" uid="00000000-0000-2710-0000-000000000000"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[default]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="DefinedStereotype">
+        <COMPID name="ExternalDocument" mc="Infrastructure.Stereotype" uid="c2e23680-96f0-11de-a322-001fe2c988b8"/>
+        <COMPID name="ModelComponent" mc="Infrastructure.Stereotype" uid="00d0052c-0000-0143-0000-000000000000"/>
+        <COMPID name="ModelComponentArchive" mc="Infrastructure.Stereotype" uid="00140d80-0000-0110-0000-000000000000"/>
+        <COMPID name="ModelComponentElementAlias" mc="Infrastructure.Stereotype" uid="3254be34-c7d8-4018-8a68-5de65c30b773"/>
+        <COMPID name="access" mc="Infrastructure.Stereotype" uid="00700680-0000-01cc-0000-000000000000"/>
+        <COMPID name="catch" mc="Infrastructure.Stereotype" uid="0054070c-0000-005f-0000-000000000000"/>
+        <COMPID name="complete" mc="Infrastructure.Stereotype" uid="00700680-0000-01f1-0000-000000000000"/>
+        <COMPID name="create" mc="Infrastructure.Stereotype" uid="00700680-0000-0202-0000-000000000000"/>
+        <COMPID name="create" mc="Infrastructure.Stereotype" uid="00700680-0000-0204-0000-000000000000"/>
+        <COMPID name="design pattern" mc="Infrastructure.Stereotype" uid="007006dc-0000-0139-0000-000000000000"/>
+        <COMPID name="destroy" mc="Infrastructure.Stereotype" uid="00700680-0000-0206-0000-000000000000"/>
+        <COMPID name="destroyed" mc="Infrastructure.Stereotype" uid="00700680-0000-01f3-0000-000000000000"/>
+        <COMPID name="disjoin" mc="Infrastructure.Stereotype" uid="00700680-0000-01f5-0000-000000000000"/>
+        <COMPID name="exception" mc="Infrastructure.Stereotype" uid="00700680-0000-01d1-0000-000000000000"/>
+        <COMPID name="executable" mc="Infrastructure.Stereotype" uid="00700680-0000-01c3-0000-000000000000"/>
+        <COMPID name="extend" mc="Infrastructure.Stereotype" uid="00000000-0000-9c48-0000-000000000000"/>
+        <COMPID name="facade" mc="Infrastructure.Stereotype" uid="00700680-0000-01d5-0000-000000000000"/>
+        <COMPID name="flow" mc="Infrastructure.Stereotype" uid="01ec1228-0000-0964-0000-000000000000"/>
+        <COMPID name="frameWork" mc="Infrastructure.Stereotype" uid="00700680-0000-01db-0000-000000000000"/>
+        <COMPID name="friend" mc="Infrastructure.Stereotype" uid="00700680-0000-01ca-0000-000000000000"/>
+        <COMPID name="impact_root" mc="Infrastructure.Stereotype" uid="01ec2468-0000-0ac1-0000-000000000000"/>
+        <COMPID name="impact_subroot" mc="Infrastructure.Stereotype" uid="01ec2468-0000-0ac6-0000-000000000000"/>
+        <COMPID name="implementation" mc="Infrastructure.Stereotype" uid="00700680-0000-01c7-0000-000000000000"/>
+        <COMPID name="implementationClass" mc="Infrastructure.Stereotype" uid="00bc0050-0000-006b-0000-000000000000"/>
+        <COMPID name="implicit" mc="Infrastructure.Stereotype" uid="00700680-0000-01b8-0000-000000000000"/>
+        <COMPID name="import" mc="Infrastructure.Stereotype" uid="00700680-0000-01ce-0000-000000000000"/>
+        <COMPID name="include" mc="Infrastructure.Stereotype" uid="00000000-0000-9c49-0000-000000000000"/>
+        <COMPID name="incomplete" mc="Infrastructure.Stereotype" uid="00700680-0000-01f7-0000-000000000000"/>
+        <COMPID name="instantiate" mc="Infrastructure.Stereotype" uid="00700680-0000-01e5-0000-000000000000"/>
+        <COMPID name="invariant" mc="Infrastructure.Stereotype" uid="00000000-0000-9c44-0000-000000000000"/>
+        <COMPID name="library" mc="Infrastructure.Stereotype" uid="00700680-0000-01c5-0000-000000000000"/>
+        <COMPID name="manifestation" mc="Infrastructure.Stereotype" uid="d5bccf8e-79b3-48df-8c79-09200aa52d19"/>
+        <COMPID name="metaclass" mc="Infrastructure.Stereotype" uid="00700680-0000-01bd-0000-000000000000"/>
+        <COMPID name="metamodel" mc="Infrastructure.Stereotype" uid="00700680-0000-01e7-0000-000000000000"/>
+        <COMPID name="new" mc="Infrastructure.Stereotype" uid="00700680-0000-01f9-0000-000000000000"/>
+        <COMPID name="ordered" mc="Infrastructure.Stereotype" uid="00540a84-0000-0003-0000-000000000000"/>
+        <COMPID name="overlapping" mc="Infrastructure.Stereotype" uid="00700680-0000-01fb-0000-000000000000"/>
+        <COMPID name="postcondition" mc="Infrastructure.Stereotype" uid="00000000-0000-9c46-0000-000000000000"/>
+        <COMPID name="precondition" mc="Infrastructure.Stereotype" uid="00000000-0000-9c45-0000-000000000000"/>
+        <COMPID name="primary" mc="Infrastructure.Stereotype" uid="01ec1ac4-0000-2ef9-0000-000000000000"/>
+        <COMPID name="process" mc="Infrastructure.Stereotype" uid="00700680-0000-01ef-0000-000000000000"/>
+        <COMPID name="scenario" mc="Infrastructure.Stereotype" uid="01ec1ac4-0000-2eff-0000-000000000000"/>
+        <COMPID name="secondary" mc="Infrastructure.Stereotype" uid="01ec1ac4-0000-2f04-0000-000000000000"/>
+        <COMPID name="stub" mc="Infrastructure.Stereotype" uid="00700680-0000-01d7-0000-000000000000"/>
+        <COMPID name="subset" mc="Infrastructure.Stereotype" uid="00540a84-0000-0005-0000-000000000000"/>
+        <COMPID name="subsystem" mc="Infrastructure.Stereotype" uid="00700680-0000-01d3-0000-000000000000"/>
+        <COMPID name="system" mc="Infrastructure.Stereotype" uid="01ec1ac4-0000-2f09-0000-000000000000"/>
+        <COMPID name="system" mc="Infrastructure.Stereotype" uid="007006dc-0000-0137-0000-000000000000"/>
+        <COMPID name="throw" mc="Infrastructure.Stereotype" uid="0054070c-0000-005d-0000-000000000000"/>
+        <COMPID name="topLevel" mc="Infrastructure.Stereotype" uid="00700680-0000-01d9-0000-000000000000"/>
+        <COMPID name="trace" mc="Infrastructure.Stereotype" uid="01280500-0000-0b37-0000-000000000000"/>
+        <COMPID name="transient" mc="Infrastructure.Stereotype" uid="00700680-0000-01fe-0000-000000000000"/>
+        <COMPID name="type" mc="Infrastructure.Stereotype" uid="00700680-0000-01ba-0000-000000000000"/>
+        <COMPID name="utility" mc="Infrastructure.Stereotype" uid="00700680-0000-01bf-0000-000000000000"/>
+        <COMPID name="xor" mc="Infrastructure.Stereotype" uid="00700680-0000-0200-0000-000000000000"/>
+        <COMPID name="related_diagram" mc="Infrastructure.Stereotype" uid="2961d57b-5120-11de-bbaf-00218648fa3d"/>
+        <COMPID name="AutoDiagram" mc="Infrastructure.Stereotype" uid="8fb43b1c-7819-11e1-a4f1-002564c97630"/>
+        <COMPID name="directory" mc="Infrastructure.Stereotype" uid="6432b987-256f-4121-9428-a89d364c2cef"/>
+        <COMPID name="file" mc="Infrastructure.Stereotype" uid="0226fd5c-caf5-4cb4-b25c-06e493b37b2d"/>
+        <COMPID name="url" mc="Infrastructure.Stereotype" uid="c7ba7024-eff5-4039-a4d4-c9ddcd0a3aed"/>
+        <COMPID name="mail" mc="Infrastructure.Stereotype" uid="74d7cf69-58eb-48e4-b71a-e5bb0f7570f7"/>
+        <COMPID name="see_also" mc="Infrastructure.Stereotype" uid="0ac7e50f-50c6-4eb6-9107-3d9df92a2b75"/>
+        <COMPID name="document" mc="Infrastructure.Stereotype" uid="388ba911-9fb3-4117-80af-6099142d7816"/>
+        <COMPID name="JyMatrix" mc="Infrastructure.Stereotype" uid="72ada667-0b7f-4421-bd69-9b037642ed87"/>
+        <COMPID name="impact_model" mc="Infrastructure.Stereotype" uid="946458b2-daf1-44b8-887b-12a0d9e5c2f6"/>
+        <COMPID name="Methodology" mc="Infrastructure.Stereotype" uid="769b4d1b-614e-4503-892c-b59d0de23158"/>
+      </COMP>
+      <COMP relation="OwnedReference">
+        <COMPID name="Standard.Association" mc="Infrastructure.MetaclassReference" uid="00bc27b8-0000-0258-0000-000000000000"/>
+        <COMPID name="Standard.Attribute" mc="Infrastructure.MetaclassReference" uid="00bc27b8-0000-02a9-0000-000000000000"/>
+        <COMPID name="Standard.Classifier" mc="Infrastructure.MetaclassReference" uid="00bc27b8-0000-037a-0000-000000000000"/>
+        <COMPID name="Infrastructure.Dependency" mc="Infrastructure.MetaclassReference" uid="01ec2468-0000-0894-0000-000000000000"/>
+        <COMPID name="Infrastructure.ModelElement" mc="Infrastructure.MetaclassReference" uid="00bc27b8-0000-08c8-0000-000000000000"/>
+        <COMPID name="Standard.ModelTree" mc="Infrastructure.MetaclassReference" uid="00bc27b8-0000-092f-0000-000000000000"/>
+        <COMPID name="Standard.Operation" mc="Infrastructure.MetaclassReference" uid="deb348a5-2653-11e1-9161-002564c97630"/>
+        <COMPID name="Standard.UseCase" mc="Infrastructure.MetaclassReference" uid="00bc27b8-0000-0e0b-0000-000000000000"/>
+        <COMPID name="Standard.AssociationEnd" mc="Infrastructure.MetaclassReference" uid="00bc2f68-0000-0fd8-0000-000000000000"/>
+        <COMPID name="Standard.Instance" mc="Infrastructure.MetaclassReference" uid="3ac00e06-3921-4b35-bb60-84618d4da048"/>
+        <COMPID name="Standard.ActivityNode" mc="Infrastructure.MetaclassReference" uid="3d7b14d7-4de3-4b8b-8a91-00c002a833bb"/>
+        <COMPID name="Standard.StateVertex" mc="Infrastructure.MetaclassReference" uid="de95a30a-def3-4199-88a5-577f867327a2"/>
+        <COMPID name="Analyst.AnalystItem" mc="Infrastructure.MetaclassReference" uid="0c841642-4e99-4f0d-8a80-4f6d24bf8656"/>
+        <COMPID name="Standard.ActivityGroup" mc="Infrastructure.MetaclassReference" uid="a27efc42-08b8-4e7d-95c6-b393e6fe5fba"/>
+        <COMPID name="Standard.Behavior" mc="Infrastructure.MetaclassReference" uid="1b62b1eb-de82-44cb-be22-ed350ae5cf8c"/>
+        <COMPID name="Standard.BpmnBaseElement" mc="Infrastructure.MetaclassReference" uid="aeb07ec3-af96-4069-af14-0436082805ca"/>
+        <COMPID name="Standard.Clause" mc="Infrastructure.MetaclassReference" uid="89c8bd8c-fa56-475b-9fe6-ffe3910cc35c"/>
+        <COMPID name="Standard.CollaborationUse" mc="Infrastructure.MetaclassReference" uid="8281b44e-16ea-4e9b-94d1-dc28a2be86a9"/>
+        <COMPID name="Standard.Constraint" mc="Infrastructure.MetaclassReference" uid="4bd5d0c9-d5de-41d0-9515-f36f0ac34454"/>
+        <COMPID name="Standard.EnumerationLiteral" mc="Infrastructure.MetaclassReference" uid="df3fdfd2-5ce3-4a13-b31e-01ba8c736529"/>
+        <COMPID name="Standard.InteractionFragment" mc="Infrastructure.MetaclassReference" uid="a6e0f5bd-2649-4c75-a926-3e833fb13002"/>
+        <COMPID name="Standard.ProvidedInterface" mc="Infrastructure.MetaclassReference" uid="ca6d601e-7686-4e90-9b45-95d3878eddd4"/>
+        <COMPID name="Standard.RequiredInterface" mc="Infrastructure.MetaclassReference" uid="433bb965-77f8-4b1b-9ace-864e5af81454"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

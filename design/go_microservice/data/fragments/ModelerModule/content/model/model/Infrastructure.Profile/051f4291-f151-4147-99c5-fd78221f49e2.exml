@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="mda" version="4">
+  <OBJECT>
+    <ID name="mda" mc="Infrastructure.Profile" uid="051f4291-f151-4147-99c5-fd78221f49e2"/>
+    <PID name="ModelerModule" mc="Infrastructure.ModuleComponent" uid="00000000-0000-2710-0000-000000000000"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[mda]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="DefinedStereotype">
+        <COMPID name="MDAAssocDep" mc="Infrastructure.Stereotype" uid="94b7efa5-f94c-4d1d-896f-f103e56a8e2e"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

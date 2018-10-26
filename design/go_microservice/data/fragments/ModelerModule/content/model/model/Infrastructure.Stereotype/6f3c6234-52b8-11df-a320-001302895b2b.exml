@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="UML2Device" version="4">
+  <OBJECT>
+    <ID name="UML2Device" mc="Infrastructure.Stereotype" uid="6f3c6234-52b8-11df-a320-001302895b2b"/>
+    <PID name="XMI" mc="Infrastructure.Profile" uid="01ec045c-0000-3739-0000-000000000000"/>
+    <ATTRIBUTES>
+      <ATT name="Image"></ATT>
+      <ATT name="Icon"></ATT>
+      <ATT name="IsHidden">true</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="LabelKey"><![CDATA[%stereotype.UML2Device.label]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[Standard.Node]]></ATT>
+      <ATT name="Name"><![CDATA[UML2Device]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,66 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Extern Test" version="4">
+  <OBJECT>
+    <ID name="Extern Test" mc="Infrastructure.PropertyTableDefinition" uid="ee295439-adfb-4038-9ad2-9e643a37e076"/>
+    <PID name="Analyst.TestContainer" mc="Infrastructure.MetaclassReference" uid="0299965c-6270-4698-bb92-f54c7eeaf304"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[Extern Test]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Owned">
+        <OBJECT>
+          <ID name="Resource Location" mc="Infrastructure.PropertyDefinition" uid="10cc560b-48cb-4783-b20c-cc56f5fa3728"/>
+          <ATTRIBUTES>
+            <ATT name="IsEditable">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[Resource Location]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <ID name="Text" mc="Infrastructure.PropertyType" uid="01a40888-0000-002a-0000-000000000000"/>
+            </LINK>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.Note" uid="16bd38d8-6b16-497c-a489-bcbb5666f6ed"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[This property contains an external reference to access the test definition in its native environment (external tool).
+For example, a URL that displays the test definition in a browser.]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="test_propertyset" mc="Infrastructure.Stereotype" uid="859f8b76-5acc-4a9c-a5eb-973467388b13"/>
+      </LINK>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="ecf37aa8-4c30-41db-8a72-42ffd324fba1"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[<p>Extern Tests are meant to reference tests not managed by Modelio, but by an external tool.</p>
+]]></ATT>
+            <ATT name="MimeType"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

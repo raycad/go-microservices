@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="UML2LoopVariableInput" version="4">
+  <OBJECT>
+    <ID name="UML2LoopVariableInput" mc="Infrastructure.Stereotype" uid="7a7f049a-6b5f-4db9-9f79-8e327ca90297"/>
+    <PID name="XMI" mc="Infrastructure.Profile" uid="01ec045c-0000-3739-0000-000000000000"/>
+    <ATTRIBUTES>
+      <ATT name="Image"></ATT>
+      <ATT name="Icon"></ATT>
+      <ATT name="IsHidden">true</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="LabelKey"><![CDATA[%stereotype.UML2LoopVariableInput.label]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[Standard.InputPin]]></ATT>
+      <ATT name="Name"><![CDATA[UML2LoopVariableInput]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

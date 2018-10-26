@@ -1,0 +1,176 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Design" version="4">
+  <OBJECT>
+    <ID name="Design" mc="Infrastructure.PropertyTableDefinition" uid="00080cf0-0000-001f-0000-000000000000"/>
+    <PID name="Analyst.RequirementContainer" mc="Infrastructure.MetaclassReference" uid="15f3a32f-071e-4625-8feb-71220ca1a2e0"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[Design]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Owned">
+        <OBJECT>
+          <ID name="Documentation" mc="Infrastructure.PropertyDefinition" uid="027e42af-273f-11e1-b78e-00137282c51b"/>
+          <ATTRIBUTES>
+            <ATT name="IsEditable">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[Documentation]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <ID name="RichText" mc="Infrastructure.PropertyType" uid="c37f01cf-273e-11e1-b78e-00137282c51b"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Origin" mc="Infrastructure.PropertyDefinition" uid="00080cf0-0000-00a0-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="IsEditable">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[Origin]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <ID name="Text" mc="Infrastructure.PropertyType" uid="01a40888-0000-002a-0000-000000000000"/>
+            </LINK>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.Note" uid="00080cf0-0000-00a1-0000-000000000000"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[This property identifies the originator of the requirement. Requirements directly originated by the "customer" are the more important.]]></ATT>
+                  <ATT name="MimeType"></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Cost" mc="Infrastructure.PropertyDefinition" uid="00080cf0-0000-00a4-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="IsEditable">true</ATT>
+            <ATT name="DefaultValue"><![CDATA[0]]></ATT>
+            <ATT name="Name"><![CDATA[Cost]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <ID name="Integer" mc="Infrastructure.PropertyType" uid="01a40888-0000-002d-0000-000000000000"/>
+            </LINK>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.Note" uid="00080cf0-0000-00a5-0000-000000000000"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Estimated cost in mm.]]></ATT>
+                  <ATT name="MimeType"></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Risk" mc="Infrastructure.PropertyDefinition" uid="00080cf0-0000-00a6-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="IsEditable">true</ATT>
+            <ATT name="DefaultValue"><![CDATA[Low]]></ATT>
+            <ATT name="Name"><![CDATA[Risk]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <ID name="Risk" mc="Infrastructure.EnumeratedPropertyType" uid="00080cf0-0000-0031-0000-000000000000"/>
+            </LINK>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.Note" uid="00080cf0-0000-00a7-0000-000000000000"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Evaluate the risk that the realisation of the requirement will be the origin of undesirable event like schedule slippage, cost overrun or unfeasibility.
+The possible values (indicative) of the Risk property are: 
+- High: Probability > 50%
+- Medium: Probability 10-50%
+- Low: Probability < 10%]]></ATT>
+                  <ATT name="MimeType"></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Stability" mc="Infrastructure.PropertyDefinition" uid="00080cf0-0000-00a8-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="IsEditable">true</ATT>
+            <ATT name="DefaultValue"><![CDATA[Low]]></ATT>
+            <ATT name="Name"><![CDATA[Stability]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <ID name="Stability" mc="Infrastructure.EnumeratedPropertyType" uid="00080cf0-0000-0032-0000-000000000000"/>
+            </LINK>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.Note" uid="00080cf0-0000-00a9-0000-000000000000"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Evaluates the risk of a requirement change during the project.
+The possible values (indicative) of the Stability property are:
+- High: The requirement is likely to change. This is common when the business domain is not yet well known, when the requirement is not well formalized.
+- Low: The requirement is not likely to change.]]></ATT>
+                  <ATT name="MimeType"></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="requirement_propertyset" mc="Infrastructure.Stereotype" uid="01ec141c-0000-12f7-0000-000000000000"/>
+      </LINK>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="00080cf0-0000-003c-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[<p>The Design requirements are about design issues. They most often take the form of constraints</p>
+]]></ATT>
+            <ATT name="MimeType"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

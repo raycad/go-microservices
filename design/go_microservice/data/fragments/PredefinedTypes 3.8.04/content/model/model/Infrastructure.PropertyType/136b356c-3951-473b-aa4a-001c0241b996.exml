@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Date" version="4">
+  <OBJECT>
+    <ID name="Date" mc="Infrastructure.PropertyType" uid="136b356c-3951-473b-aa4a-001c0241b996"/>
+    <PID name="LocalModule" mc="Infrastructure.ModuleComponent" uid="c7d36424-3484-41b5-8aab-3fdc929873bd"/>
+    <ATTRIBUTES>
+      <ATT name="BaseType">Date</ATT>
+      <ATT name="Name"><![CDATA[Date]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,189 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Risk Properties" version="4">
+  <OBJECT>
+    <ID name="Risk Properties" mc="Infrastructure.PropertyTableDefinition" uid="eb3dbc2d-8e8a-40e4-9f8c-3cfd64a04944"/>
+    <PID name="Analyst.RiskContainer" mc="Infrastructure.MetaclassReference" uid="3a0c2e82-7709-4373-840b-046f65966b4d"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[Risk Properties]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Owned">
+        <OBJECT>
+          <ID name="Impact" mc="Infrastructure.PropertyDefinition" uid="e738485c-448e-422b-9421-c6edcd3b7040"/>
+          <ATTRIBUTES>
+            <ATT name="IsEditable">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[Impact]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <ID name="MultiText" mc="Infrastructure.PropertyType" uid="00080cf0-0000-00cf-0000-000000000000"/>
+            </LINK>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.Note" uid="153d0c09-6378-4db1-b44d-f73e9f103395"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Consequences if the risk becomes an issue. (quantify when possible)
+]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Probability" mc="Infrastructure.PropertyDefinition" uid="ca160cf1-001c-4940-8370-e9885a7c8ab0"/>
+          <ATTRIBUTES>
+            <ATT name="IsEditable">true</ATT>
+            <ATT name="DefaultValue"><![CDATA[Medium]]></ATT>
+            <ATT name="Name"><![CDATA[Probability]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <ID name="Level" mc="Infrastructure.EnumeratedPropertyType" uid="fd1e7e3d-1c25-4e43-a8d0-23ad542da716"/>
+            </LINK>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.Note" uid="26f10289-fd56-40cb-a0fb-eed539ff5b1d"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Probability of occurrence. ]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Impact Level" mc="Infrastructure.PropertyDefinition" uid="3d946044-028d-442c-b919-1328863fea1c"/>
+          <ATTRIBUTES>
+            <ATT name="IsEditable">true</ATT>
+            <ATT name="DefaultValue"><![CDATA[Medium]]></ATT>
+            <ATT name="Name"><![CDATA[Impact Level]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <ID name="Level" mc="Infrastructure.EnumeratedPropertyType" uid="fd1e7e3d-1c25-4e43-a8d0-23ad542da716"/>
+            </LINK>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.Note" uid="c1b8130d-5520-4048-ba55-404ec89e6ed8"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Strength of the impact. ]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Preventive Action" mc="Infrastructure.PropertyDefinition" uid="37c60b85-14cf-477f-a62e-51afdacbfe81"/>
+          <ATTRIBUTES>
+            <ATT name="IsEditable">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[Preventive Action]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <ID name="MultiText" mc="Infrastructure.PropertyType" uid="00080cf0-0000-00cf-0000-000000000000"/>
+            </LINK>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.Note" uid="0db044f1-473d-4842-a2a0-8accae6d89ab"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Preventive action initiated or to be initiated in order to reduce the risk. A date for the action can be indicated, as well as the person/team responsible.
+Or “postponed action”.
+Or “no action so far”.
+]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Risk Evolution" mc="Infrastructure.PropertyDefinition" uid="c0ac39c3-7ce9-4a3f-a669-0c844ff9f123"/>
+          <ATTRIBUTES>
+            <ATT name="IsEditable">true</ATT>
+            <ATT name="DefaultValue"><![CDATA[Stable]]></ATT>
+            <ATT name="Name"><![CDATA[Risk Evolution]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <ID name="Risk Evolution" mc="Infrastructure.EnumeratedPropertyType" uid="f98047ab-24f3-4b41-adbb-3cb70791184a"/>
+            </LINK>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.Note" uid="b1049183-64d6-4ce0-87b3-ec3cfb5d7d30"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Evolution of the risk.]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="risk_propertyset" mc="Infrastructure.Stereotype" uid="679a9417-8f06-4255-a409-1e1f7136e418"/>
+      </LINK>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="59053023-e059-4a04-9902-e846759dc97a"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[<p>This is the default PropertyTableDefinition for Risks.</p><p>&nbsp;</p>
+]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/html]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

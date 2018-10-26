@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="document" version="4">
+  <OBJECT>
+    <ID name="document" mc="Infrastructure.Stereotype" uid="388ba911-9fb3-4117-80af-6099142d7816"/>
+    <PID name="default" mc="Infrastructure.Profile" uid="007004e8-0000-0282-0000-000000000000"/>
+    <ATTRIBUTES>
+      <ATT name="Image"></ATT>
+      <ATT name="Icon"></ATT>
+      <ATT name="IsHidden">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="LabelKey"><![CDATA[%stereotype.document.label]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[Standard.Artifact]]></ATT>
+      <ATT name="Name"><![CDATA[document]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -49,7 +49,7 @@ definitions:
         example: 5bb3695b82ebac0f76e1cafa
         type: string
     type: object
-host: 107.113.53.47:9000
+host: 107.113.53.47:8809
 info:
   contact: {}
   description: List APIs of MovieManagement Service

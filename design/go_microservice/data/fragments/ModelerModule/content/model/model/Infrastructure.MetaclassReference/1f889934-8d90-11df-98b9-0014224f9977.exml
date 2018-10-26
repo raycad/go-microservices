@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Infrastructure.ModelElement" version="4">
+  <OBJECT>
+    <ID name="Infrastructure.ModelElement" mc="Infrastructure.MetaclassReference" uid="1f889934-8d90-11df-98b9-0014224f9977"/>
+    <PID name="TemplateProfile" mc="Infrastructure.Profile" uid="d7ea54fa-8913-11df-8dda-0014224f9977"/>
+    <ATTRIBUTES>
+      <ATT name="ReferencedClassName"><![CDATA[Infrastructure.ModelElement]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="DefinedTagType">
+        <OBJECT>
+          <ID name="TemplateParameter.Name" mc="Infrastructure.TagType" uid="072f1214-8a88-11df-9e1a-0014224f9977"/>
+          <ATTRIBUTES>
+            <ATT name="ParamNumber"><![CDATA[1]]></ATT>
+            <ATT name="IsQualified">false</ATT>
+            <ATT name="BelongToPrototype">false</ATT>
+            <ATT name="IsHidden">false</ATT>
+            <ATT name="LabelKey"><![CDATA[%tagtype.TemplateParameter.Name.label]]></ATT>
+            <ATT name="Name"><![CDATA[TemplateParameter.Name]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="TemplateParameter.Label" mc="Infrastructure.TagType" uid="d7f8ca90-8d91-11df-98b9-0014224f9977"/>
+          <ATTRIBUTES>
+            <ATT name="ParamNumber"><![CDATA[1]]></ATT>
+            <ATT name="IsQualified">false</ATT>
+            <ATT name="BelongToPrototype">false</ATT>
+            <ATT name="IsHidden">false</ATT>
+            <ATT name="LabelKey"><![CDATA[%tagtype.TemplateParameter.Label.label]]></ATT>
+            <ATT name="Name"><![CDATA[TemplateParameter.Label]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

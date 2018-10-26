@@ -20,10 +20,12 @@ import (
 	"github.com/swaggo/gin-swagger/swaggerFiles"
 )
 
-// var router interface{}
-var router *gin.Engine
+// Main manages main golang application
+type Main struct {
+	router *gin.Engine
+}
 
-func initServer() error {
+func (m *Main) initServer() error {
 	var err error
 	// Load config file
 	err = common.LoadConfig()
@@ -32,7 +34,7 @@ func initServer() error {
 	}
 
 	// Initialize mongo database
-	err = databases.InitMongoDb()
+	err = databases.Database.Init()
 	if err != nil {
 		return err
 	}
@@ -51,7 +53,7 @@ func initServer() error {
 		}
 	}
 
-	router = gin.Default()
+	m.router = gin.Default()
 
 	return nil
 }
@@ -61,20 +63,22 @@ func initServer() error {
 // @description List APIs of MovieManagement Service
 // @termsOfService http://swagger.io/terms/
 
-// @host 107.113.53.47:9000
+// @host 107.113.53.47:8809
 // @BasePath /api/v1
 func main() {
+	m := Main{}
+
 	// Initialize server
-	if initServer() != nil {
+	if m.initServer() != nil {
 		return
 	}
 
-	defer databases.CloseMongoDb()
+	defer databases.Database.Close()
 
-	c := controllers.NewController()
+	c := controllers.Movie{}
 
 	// Simple group: v1
-	v1 := router.Group("/api/v1")
+	v1 := m.router.Group("/api/v1")
 	{
 		v1.POST("/login", c.Login)
 		v1.GET("/movies/list", c.ListMovies)
@@ -84,6 +88,6 @@ func main() {
 		v1.POST("/movies", c.AddMovie)
 	}
 
-	router.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
-	router.Run(common.Config.Port)
+	m.router.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
+	m.router.Run(common.Config.Port)
 }

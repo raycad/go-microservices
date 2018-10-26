@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Code" version="4">
+  <OBJECT>
+    <ID name="Code" mc="Infrastructure.Profile" uid="00300000-0000-0032-0000-000000000000"/>
+    <PID name="ModelerModule" mc="Infrastructure.ModuleComponent" uid="00000000-0000-2710-0000-000000000000"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[Code]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedReference">
+        <COMPID name="Standard.AssociationEnd" mc="Infrastructure.MetaclassReference" uid="00bc2f68-0000-0f3a-0000-000000000000"/>
+        <COMPID name="Standard.Attribute" mc="Infrastructure.MetaclassReference" uid="00bc2f68-0000-0f44-0000-000000000000"/>
+        <COMPID name="Standard.GeneralClass" mc="Infrastructure.MetaclassReference" uid="00bc2f68-0000-0f51-0000-000000000000"/>
+        <COMPID name="Standard.Operation" mc="Infrastructure.MetaclassReference" uid="00bc2f68-0000-0fa9-0000-000000000000"/>
+        <COMPID name="Standard.Package" mc="Infrastructure.MetaclassReference" uid="00bc2f68-0000-0faf-0000-000000000000"/>
+        <COMPID name="Standard.Parameter" mc="Infrastructure.MetaclassReference" uid="00bc2f68-0000-0fc2-0000-000000000000"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

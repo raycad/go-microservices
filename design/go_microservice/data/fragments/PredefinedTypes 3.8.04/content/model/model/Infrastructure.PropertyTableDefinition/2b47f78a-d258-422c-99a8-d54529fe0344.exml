@@ -1,0 +1,63 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="KPI" version="4">
+  <OBJECT>
+    <ID name="KPI" mc="Infrastructure.PropertyTableDefinition" uid="2b47f78a-d258-422c-99a8-d54529fe0344"/>
+    <PID name="Analyst.KPIContainer" mc="Infrastructure.MetaclassReference" uid="e1ececd5-c4f0-4a74-ad9b-f2e4ed0cbaff"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[KPI]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Owned">
+        <OBJECT>
+          <ID name="Measurement" mc="Infrastructure.PropertyDefinition" uid="11d45e8b-e548-4e7d-9b39-f9e99cdfa161"/>
+          <ATTRIBUTES>
+            <ATT name="IsEditable">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[Measurement]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <ID name="MultiText" mc="Infrastructure.PropertyType" uid="00080cf0-0000-00cf-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Acceptance" mc="Infrastructure.PropertyDefinition" uid="dd05f7ce-46ac-4c7a-a0ed-7708d11a1ec0"/>
+          <ATTRIBUTES>
+            <ATT name="IsEditable">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[Acceptance]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <ID name="MultiText" mc="Infrastructure.PropertyType" uid="00080cf0-0000-00cf-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="kpi_propertyset" mc="Infrastructure.Stereotype" uid="a1a154ca-b239-4724-9953-8ca651e3ee64"/>
+      </LINK>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="61979c64-66fa-4c93-be6d-feab3775ffd8"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[<p>The Reliability requirements deal with Reliability concerns. Consider for example: frequency of failure, severity of failure.</p>
+]]></ATT>
+            <ATT name="MimeType"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

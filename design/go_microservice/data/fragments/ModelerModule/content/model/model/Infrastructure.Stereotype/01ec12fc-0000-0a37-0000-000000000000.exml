@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="goal_diagram" version="4">
+  <OBJECT>
+    <ID name="goal_diagram" mc="Infrastructure.Stereotype" uid="01ec12fc-0000-0a37-0000-000000000000"/>
+    <PID name="Analyst" mc="Infrastructure.Profile" uid="1be2e3fc-27ca-11e1-8d9c-002564c97630"/>
+    <ATTRIBUTES>
+      <ATT name="Image"><![CDATA[res/images/goaldiagram48x48.png]]></ATT>
+      <ATT name="Icon"><![CDATA[res/icon/goaldiagram.png]]></ATT>
+      <ATT name="IsHidden">true</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="LabelKey"><![CDATA[%stereotype.goal_diagram.label]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[Standard.StaticDiagram]]></ATT>
+      <ATT name="Name"><![CDATA[goal_diagram]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

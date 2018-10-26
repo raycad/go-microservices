@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="LocalModule" version="4">
+  <OBJECT>
+    <ID name="LocalModule" mc="Infrastructure.ModuleComponent" uid="c7d36424-3484-41b5-8aab-3fdc929873bd"/>
+    <ATTRIBUTES>
+      <ATT name="LicenseKey">0</ATT>
+      <ATT name="MajVersion">0</ATT>
+      <ATT name="MinVersion">0</ATT>
+      <ATT name="MinMinVersion"></ATT>
+      <ATT name="MinBinVersionCompatibility"></ATT>
+      <ATT name="JavaClassName"></ATT>
+      <ATT name="Name"><![CDATA[LocalModule]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="DefinedPropertyType">
+        <COMPID name="Benefit" mc="Infrastructure.EnumeratedPropertyType" uid="00080cf0-0000-00bc-0000-000000000000"/>
+        <COMPID name="Risk" mc="Infrastructure.EnumeratedPropertyType" uid="00080cf0-0000-0031-0000-000000000000"/>
+        <COMPID name="Satisfaction" mc="Infrastructure.EnumeratedPropertyType" uid="00bc470c-0000-0035-0000-000000000000"/>
+        <COMPID name="Scope" mc="Infrastructure.EnumeratedPropertyType" uid="00bc470c-0000-001b-0000-000000000000"/>
+        <COMPID name="Stability" mc="Infrastructure.EnumeratedPropertyType" uid="00080cf0-0000-0032-0000-000000000000"/>
+        <COMPID name="Boolean" mc="Infrastructure.PropertyType" uid="01a40888-0000-002b-0000-000000000000"/>
+        <COMPID name="Date" mc="Infrastructure.PropertyType" uid="136b356c-3951-473b-aa4a-001c0241b996"/>
+        <COMPID name="Element" mc="Infrastructure.PropertyType" uid="b58969db-144e-4a1f-b946-cd6deacca9bd"/>
+        <COMPID name="Float" mc="Infrastructure.PropertyType" uid="bc36b99e-8470-4aee-ba2a-5012c0a17525"/>
+        <COMPID name="Integer" mc="Infrastructure.PropertyType" uid="01a40888-0000-002d-0000-000000000000"/>
+        <COMPID name="MultiElement" mc="Infrastructure.PropertyType" uid="1bdf9f87-e9ad-4849-ab22-c25147e8d00c"/>
+        <COMPID name="MultiString" mc="Infrastructure.PropertyType" uid="fd461312-91e1-4589-a042-c814e1f53e6a"/>
+        <COMPID name="MultiText" mc="Infrastructure.PropertyType" uid="00080cf0-0000-00cf-0000-000000000000"/>
+        <COMPID name="RichText" mc="Infrastructure.PropertyType" uid="c37f01cf-273e-11e1-b78e-00137282c51b"/>
+        <COMPID name="Text" mc="Infrastructure.PropertyType" uid="01a40888-0000-002a-0000-000000000000"/>
+        <COMPID name="Time" mc="Infrastructure.PropertyType" uid="753fc9f9-c136-449c-949c-4fa467511d99"/>
+        <COMPID name="Unsigned" mc="Infrastructure.PropertyType" uid="827950f7-671f-4db7-9374-23df864712ef"/>
+        <COMPID name="Acceptance" mc="Infrastructure.EnumeratedPropertyType" uid="01ec152c-0000-3152-0000-000000000000"/>
+        <COMPID name="Kind" mc="Infrastructure.EnumeratedPropertyType" uid="00bc470c-0000-002a-0000-000000000000"/>
+        <COMPID name="Level" mc="Infrastructure.EnumeratedPropertyType" uid="fd1e7e3d-1c25-4e43-a8d0-23ad542da716"/>
+        <COMPID name="Risk Evolution" mc="Infrastructure.EnumeratedPropertyType" uid="f98047ab-24f3-4b41-adbb-3cb70791184a"/>
+        <COMPID name="Test Kind" mc="Infrastructure.EnumeratedPropertyType" uid="9de3f89f-1f06-49c6-81dd-70fef0827247"/>
+        <COMPID name="Test State" mc="Infrastructure.EnumeratedPropertyType" uid="22ea1bb3-4c78-4727-95a9-71e65513e8e7"/>
+      </COMP>
+      <COMP relation="OwnedProfile">
+        <COMPID name="Analyst" mc="Infrastructure.Profile" uid="49121241-ca7a-4e7c-8a96-195f92f639e1"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

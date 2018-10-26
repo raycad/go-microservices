@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="main" version="4">
+  <OBJECT>
+    <ID name="main" mc="Standard.Package" uid="8cc9310e-487b-46a2-aaba-7df5820b965b"/>
+    <PID name="cd" mc="Standard.Package" uid="9920168b-3a00-48c8-90ef-2e3045a0ed96"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[main]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="main.go" mc="Standard.Class" uid="cda5e59a-a1a9-4b4a-b7f1-dcb7a1a3f84d"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

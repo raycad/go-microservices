@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Kind" version="4">
+  <OBJECT>
+    <ID name="Kind" mc="Infrastructure.EnumeratedPropertyType" uid="00bc470c-0000-002a-0000-000000000000"/>
+    <PID name="LocalModule" mc="Infrastructure.ModuleComponent" uid="c7d36424-3484-41b5-8aab-3fdc929873bd"/>
+    <ATTRIBUTES>
+      <ATT name="BaseType">Enumerate</ATT>
+      <ATT name="Name"><![CDATA[Kind]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Litteral">
+        <OBJECT>
+          <ID name="Quantitative" mc="Infrastructure.PropertyEnumerationLitteral" uid="00bc470c-0000-002b-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Quantitative]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Qualitative" mc="Infrastructure.PropertyEnumerationLitteral" uid="00bc470c-0000-002c-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Qualitative]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

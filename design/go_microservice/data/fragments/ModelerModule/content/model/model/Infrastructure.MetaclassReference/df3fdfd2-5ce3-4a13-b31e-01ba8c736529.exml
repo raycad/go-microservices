@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Standard.EnumerationLiteral" version="4">
+  <OBJECT>
+    <ID name="Standard.EnumerationLiteral" mc="Infrastructure.MetaclassReference" uid="df3fdfd2-5ce3-4a13-b31e-01ba8c736529"/>
+    <PID name="default" mc="Infrastructure.Profile" uid="007004e8-0000-0282-0000-000000000000"/>
+    <ATTRIBUTES>
+      <ATT name="ReferencedClassName"><![CDATA[Standard.EnumerationLiteral]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="DefinedTagType">
+        <OBJECT>
+          <ID name="userDiagramImage" mc="Infrastructure.TagType" uid="fb4e837f-19a1-4f43-b240-5efd7db90b11"/>
+          <ATTRIBUTES>
+            <ATT name="ParamNumber"><![CDATA[1]]></ATT>
+            <ATT name="IsQualified">false</ATT>
+            <ATT name="BelongToPrototype">false</ATT>
+            <ATT name="IsHidden">false</ATT>
+            <ATT name="LabelKey"><![CDATA[%tagtype.userDiagramImage.label]]></ATT>
+            <ATT name="Name"><![CDATA[userDiagramImage]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

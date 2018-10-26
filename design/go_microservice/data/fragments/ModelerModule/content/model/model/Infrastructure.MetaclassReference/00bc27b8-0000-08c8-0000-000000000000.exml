@@ -1,0 +1,113 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Infrastructure.ModelElement" version="4">
+  <OBJECT>
+    <ID name="Infrastructure.ModelElement" mc="Infrastructure.MetaclassReference" uid="00bc27b8-0000-08c8-0000-000000000000"/>
+    <PID name="default" mc="Infrastructure.Profile" uid="007004e8-0000-0282-0000-000000000000"/>
+    <ATTRIBUTES>
+      <ATT name="ReferencedClassName"><![CDATA[Infrastructure.ModelElement]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="DefinedNoteType">
+        <OBJECT>
+          <ID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="IsHidden">false</ATT>
+            <ATT name="LabelKey"><![CDATA[%notetype.description.label]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/html]]></ATT>
+            <ATT name="Name"><![CDATA[description]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="undefined" mc="Infrastructure.NoteType" uid="00000000-0000-3e83-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="IsHidden">false</ATT>
+            <ATT name="LabelKey"><![CDATA[%notetype.undefined.label]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"><![CDATA[undefined]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="comment" mc="Infrastructure.NoteType" uid="00000000-0000-3e80-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="IsHidden">false</ATT>
+            <ATT name="LabelKey"><![CDATA[%notetype.comment.label]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"><![CDATA[comment]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="DefinedResourceType">
+        <OBJECT>
+          <ID name="analysis" mc="Infrastructure.ResourceType" uid="86f09380-2bd8-11e1-8cff-002564c97630"/>
+          <ATTRIBUTES>
+            <ATT name="IsHidden">false</ATT>
+            <ATT name="LabelKey"><![CDATA[%documenttype.analysis.label]]></ATT>
+            <ATT name="Icon"></ATT>
+            <ATT name="Image"></ATT>
+            <ATT name="Name"><![CDATA[analysis]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="design" mc="Infrastructure.ResourceType" uid="06da53d0-2177-11e1-a46e-002564c97630"/>
+          <ATTRIBUTES>
+            <ATT name="IsHidden">false</ATT>
+            <ATT name="LabelKey"><![CDATA[%documenttype.design.label]]></ATT>
+            <ATT name="Icon"></ATT>
+            <ATT name="Image"></ATT>
+            <ATT name="Name"><![CDATA[design]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="other" mc="Infrastructure.ResourceType" uid="9ccf914f-2175-11e1-a46e-002564c97630"/>
+          <ATTRIBUTES>
+            <ATT name="IsHidden">false</ATT>
+            <ATT name="LabelKey"><![CDATA[%documenttype.other.label]]></ATT>
+            <ATT name="Icon"></ATT>
+            <ATT name="Image"></ATT>
+            <ATT name="Name"><![CDATA[other]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="specification" mc="Infrastructure.ResourceType" uid="06972e98-2177-11e1-a46e-002564c97630"/>
+          <ATTRIBUTES>
+            <ATT name="IsHidden">false</ATT>
+            <ATT name="LabelKey"><![CDATA[%documenttype.specification.label]]></ATT>
+            <ATT name="Icon"></ATT>
+            <ATT name="Image"></ATT>
+            <ATT name="Name"><![CDATA[specification]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="DefinedTagType">
+        <OBJECT>
+          <ID name="nodoc" mc="Infrastructure.TagType" uid="c40494de-2182-11e1-85ce-002564c97630"/>
+          <ATTRIBUTES>
+            <ATT name="ParamNumber"><![CDATA[0]]></ATT>
+            <ATT name="IsQualified">false</ATT>
+            <ATT name="BelongToPrototype">false</ATT>
+            <ATT name="IsHidden">false</ATT>
+            <ATT name="LabelKey"><![CDATA[%tagtype.nodoc.label]]></ATT>
+            <ATT name="Name"><![CDATA[nodoc]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

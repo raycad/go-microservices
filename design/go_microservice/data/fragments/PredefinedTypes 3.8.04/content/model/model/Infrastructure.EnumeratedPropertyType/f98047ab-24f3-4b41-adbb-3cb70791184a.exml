@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Risk Evolution" version="4">
+  <OBJECT>
+    <ID name="Risk Evolution" mc="Infrastructure.EnumeratedPropertyType" uid="f98047ab-24f3-4b41-adbb-3cb70791184a"/>
+    <PID name="LocalModule" mc="Infrastructure.ModuleComponent" uid="c7d36424-3484-41b5-8aab-3fdc929873bd"/>
+    <ATTRIBUTES>
+      <ATT name="BaseType">Enumerate</ATT>
+      <ATT name="Name"><![CDATA[Risk Evolution]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Litteral">
+        <OBJECT>
+          <ID name="Increased" mc="Infrastructure.PropertyEnumerationLitteral" uid="afb786f3-c681-48cf-b5d2-5e3e45d8e0ef"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Increased]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Reduced" mc="Infrastructure.PropertyEnumerationLitteral" uid="e8067be8-a03e-4d1e-a075-887c0a1d4812"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Reduced]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Stable" mc="Infrastructure.PropertyEnumerationLitteral" uid="04546c20-dab7-4160-aa11-5b1ebe4c12d6"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Stable]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Closed" mc="Infrastructure.PropertyEnumerationLitteral" uid="f8e666bd-44b4-4758-924a-d26562e2c80b"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Closed]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

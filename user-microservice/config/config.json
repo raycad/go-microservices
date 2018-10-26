@@ -1,7 +1,7 @@
 {
     "port": ":8808",
     "enableGinConsoleLog": true,
-    "enableGinFileLog": false,
+    "enableGinFileLog": true,
 
     "logFilename": "logs/server.log",
     "logMaxSize": 10,

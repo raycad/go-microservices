@@ -20,10 +20,12 @@ import (
 	"github.com/swaggo/gin-swagger/swaggerFiles"
 )
 
-// var router interface{}
-var router *gin.Engine
+// Main manages main golang application
+type Main struct {
+	router *gin.Engine
+}
 
-func initServer() error {
+func (m *Main) initServer() error {
 	var err error
 	// Load config file
 	err = common.LoadConfig()
@@ -31,8 +33,8 @@ func initServer() error {
 		return err
 	}
 
-	// Initialize mongo database
-	err = databases.InitMongoDb()
+	// Initialize User database
+	err = databases.Database.Init()
 	if err != nil {
 		return err
 	}
@@ -51,7 +53,7 @@ func initServer() error {
 		}
 	}
 
-	router = gin.Default()
+	m.router = gin.Default()
 
 	return nil
 }
@@ -61,19 +63,21 @@ func initServer() error {
 // @description List APIs of UserManagement Service
 // @termsOfService http://swagger.io/terms/
 
-// @host 127.0.0.1:8808
+// @host 107.113.53.47:8808
 // @BasePath /api/v1
 func main() {
+	m := Main{}
+
 	// Initialize server
-	if initServer() != nil {
+	if m.initServer() != nil {
 		return
 	}
 
-	defer databases.CloseMongoDb()
+	defer databases.Database.Close()
 
-	c := controllers.NewController()
+	c := controllers.User{}
 	// Simple group: v1
-	v1 := router.Group("/api/v1")
+	v1 := m.router.Group("/api/v1")
 	{
 		admin := v1.Group("/admin")
 		{
@@ -94,7 +98,7 @@ func main() {
 		}
 	}
 
-	router.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
+	m.router.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
 
-	router.Run(common.Config.Port)
+	m.router.Run(common.Config.Port)
 }

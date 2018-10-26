@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="cd" version="4">
+  <OBJECT>
+    <ID name="cd" mc="Standard.Package" uid="9920168b-3a00-48c8-90ef-2e3045a0ed96"/>
+    <PID name="go_microservice" mc="Standard.Project" uid="833db0dc-f0d3-4b42-baa1-b1e684749a5f"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[cd]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="main" mc="Standard.Package" uid="8cc9310e-487b-46a2-aaba-7df5820b965b"/>
+        <COMPID name="models" mc="Standard.Package" uid="d193ee61-f7cc-43ee-8685-fcd6447a4042"/>
+        <COMPID name="daos" mc="Standard.Package" uid="c92b72f7-d0f1-479c-a276-ad2bcc7670c7"/>
+        <COMPID name="common" mc="Standard.Package" uid="b3773a2b-6e1d-4138-b178-1f54b8031ecf"/>
+        <COMPID name="utils" mc="Standard.Package" uid="06622b1f-c2a4-4924-a684-d8eaf8535790"/>
+        <COMPID name="controllers" mc="Standard.Package" uid="be041f8b-dacf-416a-b54b-2a5175bf68c2"/>
+        <COMPID name="databases" mc="Standard.Package" uid="2e3b4321-dc5d-4f0c-805f-352a83be3bcf"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="cd Class diagram" mc="Standard.ClassDiagram" uid="68e61c2e-5633-4b86-8319-ec041e3358ab"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

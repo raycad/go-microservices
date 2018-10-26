@@ -17,6 +17,12 @@ import (
 	"gopkg.in/mgo.v2/bson"
 )
 
+// User manages
+type User struct {
+	utils   utils.Utils
+	userDAO daos.User
+}
+
 // Authenticate godoc
 // @Summary Check user authentication
 // @Description Authenticate user
@@ -29,19 +35,18 @@ import (
 // @Failure 500 {object} models.Error
 // @Success 200 {object} models.Token
 // @Router /admin/auth [post]
-func (c *Controllers) Authenticate(ctx *gin.Context) {
+func (u *User) Authenticate(ctx *gin.Context) {
 	username := ctx.PostForm("user")
 	password := ctx.PostForm("password")
 
-	var userDAO daos.UserDAO
 	// var user models.User
 	var err error
-	_, err = userDAO.Login(username, password)
+	_, err = u.userDAO.Login(username, password)
 
 	if err == nil {
 		var tokenString string
 		// Generate token string
-		tokenString, err = utils.GenerateJWT(username, "")
+		tokenString, err = u.utils.GenerateJWT(username, "")
 		if err != nil {
 			ctx.JSON(http.StatusInternalServerError, models.Error{common.StatusCodeUnknown, err.Error()})
 			log.Debug("[ERROR]: ", err)
@@ -68,7 +73,7 @@ func (c *Controllers) Authenticate(ctx *gin.Context) {
 // @Failure 400 {object} models.Error
 // @Success 200 {object} models.Message
 // @Router /users [post]
-func (c *Controllers) AddUser(ctx *gin.Context) {
+func (u *User) AddUser(ctx *gin.Context) {
 	var addUser models.AddUser
 	if err := ctx.ShouldBindJSON(&addUser); err != nil {
 		ctx.JSON(http.StatusInternalServerError, models.Error{common.StatusCodeUnknown, err.Error()})
@@ -81,9 +86,7 @@ func (c *Controllers) AddUser(ctx *gin.Context) {
 	}
 
 	user := models.User{bson.NewObjectId(), addUser.Name, addUser.Password}
-	var userDAO daos.UserDAO
-
-	err := userDAO.Insert(user)
+	err := u.userDAO.Insert(user)
 	if err == nil {
 		ctx.JSON(http.StatusOK, models.Message{"Successfully"})
 		log.Debug("Registered a new user = " + user.Name + ", password = " + user.Password)
@@ -103,11 +106,10 @@ func (c *Controllers) AddUser(ctx *gin.Context) {
 // @Failure 500 {object} models.Error
 // @Success 200 {array} models.User
 // @Router /users/list [get]
-func (c *Controllers) ListUsers(ctx *gin.Context) {
-	var userDAO daos.UserDAO
+func (u *User) ListUsers(ctx *gin.Context) {
 	var users []models.User
 	var err error
-	users, err = userDAO.GetAll()
+	users, err = u.userDAO.GetAll()
 
 	if err == nil {
 		ctx.JSON(http.StatusOK, users)
@@ -128,12 +130,11 @@ func (c *Controllers) ListUsers(ctx *gin.Context) {
 // @Failure 500 {object} models.Error
 // @Success 200 {object} models.User
 // @Router /users/detail/{id} [get]
-func (c *Controllers) GetUserByID(ctx *gin.Context) {
-	var userDAO daos.UserDAO
+func (u *User) GetUserByID(ctx *gin.Context) {
 	var user models.User
 	var err error
 	id := ctx.Params.ByName("id")
-	user, err = userDAO.GetByID(id)
+	user, err = u.userDAO.GetByID(id)
 
 	if err == nil {
 		ctx.JSON(http.StatusOK, user)
@@ -154,12 +155,11 @@ func (c *Controllers) GetUserByID(ctx *gin.Context) {
 // @Failure 500 {object} models.Error
 // @Success 200 {object} models.User
 // @Router /users [get]
-func (c *Controllers) GetUserByParams(ctx *gin.Context) {
-	var userDAO daos.UserDAO
+func (u *User) GetUserByParams(ctx *gin.Context) {
 	var user models.User
 	var err error
 	id := ctx.Request.URL.Query()["id"][0]
-	user, err = userDAO.GetByID(id)
+	user, err = u.userDAO.GetByID(id)
 
 	if err == nil {
 		ctx.JSON(http.StatusOK, user)
@@ -180,10 +180,9 @@ func (c *Controllers) GetUserByParams(ctx *gin.Context) {
 // @Failure 500 {object} models.Error
 // @Success 200 {object} models.Message
 // @Router /users/{id} [delete]
-func (c *Controllers) DeleteUserByID(ctx *gin.Context) {
-	var userDAO daos.UserDAO
+func (u *User) DeleteUserByID(ctx *gin.Context) {
 	id := ctx.Params.ByName("id")
-	err := userDAO.DeleteByID(id)
+	err := u.userDAO.DeleteByID(id)
 
 	if err == nil {
 		ctx.JSON(http.StatusOK, models.Message{"Successfully"})
@@ -204,16 +203,14 @@ func (c *Controllers) DeleteUserByID(ctx *gin.Context) {
 // @Failure 500 {object} models.Error
 // @Success 200 {object} models.Message
 // @Router /users [patch]
-func (c *Controllers) UpdateUser(ctx *gin.Context) {
+func (u *User) UpdateUser(ctx *gin.Context) {
 	var user models.User
 	if err := ctx.ShouldBindJSON(&user); err != nil {
 		ctx.JSON(http.StatusBadRequest, models.Error{common.StatusCodeUnknown, err.Error()})
 		return
 	}
 
-	var userDAO daos.UserDAO
-
-	err := userDAO.Update(user)
+	err := u.userDAO.Update(user)
 	if err == nil {
 		ctx.JSON(http.StatusOK, models.Message{"Successfully"})
 		log.Debug("Registered a new user = " + user.Name + ", password = " + user.Password)

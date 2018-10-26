@@ -21,8 +21,11 @@ type SdtClaims struct {
 	jwt_lib.StandardClaims
 }
 
+type Utils struct {
+}
+
 // GenerateJWT generates token from the given information
-func GenerateJWT(name string, role string) (string, error) {
+func (u *Utils) GenerateJWT(name string, role string) (string, error) {
 	claims := SdtClaims{
 		name,
 		role,
@@ -39,7 +42,7 @@ func GenerateJWT(name string, role string) (string, error) {
 }
 
 // ValidateObjectID checks the given ID if it's an object id or not
-func ValidateObjectID(id string) error {
+func (u *Utils) ValidateObjectID(id string) error {
 	if bson.IsObjectIdHex(id) != true {
 		return errors.New(common.ErrNotObjectIDHex)
 	}

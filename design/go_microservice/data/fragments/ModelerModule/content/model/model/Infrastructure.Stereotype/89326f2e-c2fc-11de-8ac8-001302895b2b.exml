@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="UML2AddVariableValueAction" version="4">
+  <OBJECT>
+    <ID name="UML2AddVariableValueAction" mc="Infrastructure.Stereotype" uid="89326f2e-c2fc-11de-8ac8-001302895b2b"/>
+    <PID name="XMI" mc="Infrastructure.Profile" uid="01ec045c-0000-3739-0000-000000000000"/>
+    <ATTRIBUTES>
+      <ATT name="Image"></ATT>
+      <ATT name="Icon"></ATT>
+      <ATT name="IsHidden">true</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="LabelKey"><![CDATA[%stereotype.UML2AddVariableValueAction.label]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[Standard.OpaqueAction]]></ATT>
+      <ATT name="Name"><![CDATA[UML2AddVariableValueAction]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

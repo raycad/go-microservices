@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Analyst.RequirementContainer" version="4">
+  <OBJECT>
+    <ID name="Analyst.RequirementContainer" mc="Infrastructure.MetaclassReference" uid="d13be600-47df-4a0e-b192-be61aee2d074"/>
+    <PID name="Analyst" mc="Infrastructure.Profile" uid="49121241-ca7a-4e7c-8a96-195f92f639e1"/>
+    <ATTRIBUTES>
+      <ATT name="ReferencedClassName"><![CDATA[Analyst.RequirementContainer]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="DefinedTable">
+        <COMPID name="Supportability" mc="Infrastructure.PropertyTableDefinition" uid="00080cf0-0000-001e-0000-000000000000"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

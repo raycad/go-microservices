@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Archimate.Element" version="4">
+  <OBJECT>
+    <ID name="Archimate.Element" mc="Infrastructure.MetaclassReference" uid="0a139a09-a6d0-4671-a1f1-f5a17fe0f869"/>
+    <PID name="ArchiMate" mc="Infrastructure.Profile" uid="9e140139-914b-4721-9558-385b550e28ca"/>
+    <ATTRIBUTES>
+      <ATT name="ReferencedClassName"><![CDATA[Archimate.Element]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="DefinedTagType">
+        <OBJECT>
+          <ID name="userDiagramImage" mc="Infrastructure.TagType" uid="4e937f83-ad13-4869-8ba0-ac698e1c0762"/>
+          <ATTRIBUTES>
+            <ATT name="ParamNumber"><![CDATA[1]]></ATT>
+            <ATT name="IsQualified">false</ATT>
+            <ATT name="BelongToPrototype">false</ATT>
+            <ATT name="IsHidden">false</ATT>
+            <ATT name="LabelKey"><![CDATA[%tagtype.userDiagramImage.label]]></ATT>
+            <ATT name="Name"><![CDATA[userDiagramImage]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

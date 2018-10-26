@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Methodology" version="4">
+  <OBJECT>
+    <ID name="Methodology" mc="Infrastructure.Profile" uid="4719c76c-91a4-4508-84fd-cef0458f4f3e"/>
+    <PID name="ModelerModule" mc="Infrastructure.ModuleComponent" uid="00000000-0000-2710-0000-000000000000"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[Methodology]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="DefinedStereotype">
+        <COMPID name="AbstractMethodologicalLink" mc="Infrastructure.Stereotype" uid="216c1c7f-0ffc-453c-9559-41aeff7e3510"/>
+        <COMPID name="Allocated" mc="Infrastructure.Stereotype" uid="e5076ee8-b071-4433-a25d-4d8cdddead0a"/>
+        <COMPID name="Called" mc="Infrastructure.Stereotype" uid="c3862c6c-5983-4d1a-b0e2-58dd2685eda0"/>
+        <COMPID name="Event" mc="Infrastructure.Stereotype" uid="143b4e00-fe2e-44d0-9c64-5a95e385ec5a"/>
+        <COMPID name="PartitionElement" mc="Infrastructure.Stereotype" uid="5de33d2a-ed28-439c-aa09-d11bf1a6d878"/>
+        <COMPID name="Process" mc="Infrastructure.Stereotype" uid="616b72d4-1d47-49e1-a381-2e6ecfea637c"/>
+        <COMPID name="Reference" mc="Infrastructure.Stereotype" uid="3b4dc351-ccaa-47b8-af57-8434f8e0e5f5"/>
+        <COMPID name="Represents" mc="Infrastructure.Stereotype" uid="f5d2927d-46d6-4d87-9cf2-adb4a47ca929"/>
+        <COMPID name="State" mc="Infrastructure.Stereotype" uid="c2d2a1ec-2c29-453c-a79c-19e4f2d27f13"/>
+      </COMP>
+      <LINK relation="Extension">
+        <ID name="Methodology" mc="Infrastructure.Stereotype" uid="769b4d1b-614e-4503-892c-b59d0de23158"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

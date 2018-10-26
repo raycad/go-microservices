@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Analyst" version="4">
+  <OBJECT>
+    <ID name="Analyst" mc="Infrastructure.Profile" uid="1be2e3fc-27ca-11e1-8d9c-002564c97630"/>
+    <PID name="ModelerModule" mc="Infrastructure.ModuleComponent" uid="00000000-0000-2710-0000-000000000000"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[Analyst]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="DefinedStereotype">
+        <COMPID name="dictionary_propertyset" mc="Infrastructure.Stereotype" uid="01ec141c-0000-12fc-0000-000000000000"/>
+        <COMPID name="dictionary_diagram" mc="Infrastructure.Stereotype" uid="01ec12fc-0000-0c02-0000-000000000000"/>
+        <COMPID name="business_rule_diagram" mc="Infrastructure.Stereotype" uid="01ec12fc-0000-0aca-0000-000000000000"/>
+        <COMPID name="business_rule_propertyset" mc="Infrastructure.Stereotype" uid="01ec141c-0000-1301-0000-000000000000"/>
+        <COMPID name="requirement_propertyset" mc="Infrastructure.Stereotype" uid="01ec141c-0000-12f7-0000-000000000000"/>
+        <COMPID name="requirement_diagram" mc="Infrastructure.Stereotype" uid="01ec12fc-0000-0bfd-0000-000000000000"/>
+        <COMPID name="goal_propertyset" mc="Infrastructure.Stereotype" uid="01ec141c-0000-12f2-0000-000000000000"/>
+        <COMPID name="goal_diagram" mc="Infrastructure.Stereotype" uid="01ec12fc-0000-0a37-0000-000000000000"/>
+        <COMPID name="kpi_diagram" mc="Infrastructure.Stereotype" uid="19d2deba-a7b7-4818-8d19-aa8b2d63dba1"/>
+        <COMPID name="kpi_propertyset" mc="Infrastructure.Stereotype" uid="a1a154ca-b239-4724-9953-8ca651e3ee64"/>
+        <COMPID name="risk_propertyset" mc="Infrastructure.Stereotype" uid="679a9417-8f06-4255-a409-1e1f7136e418"/>
+        <COMPID name="risk_diagram" mc="Infrastructure.Stereotype" uid="61222898-ff82-4681-a82f-a8f14c479dd1"/>
+        <COMPID name="test_propertyset" mc="Infrastructure.Stereotype" uid="859f8b76-5acc-4a9c-a5eb-973467388b13"/>
+        <COMPID name="test_diagram" mc="Infrastructure.Stereotype" uid="e1d2f141-a387-4fd1-bff7-3f7dcbcb8718"/>
+        <COMPID name="part" mc="Infrastructure.Stereotype" uid="01ec12fc-0000-00b7-0000-000000000000"/>
+        <COMPID name="derive" mc="Infrastructure.Stereotype" uid="01ec12fc-0000-021a-0000-000000000000"/>
+        <COMPID name="satisfy" mc="Infrastructure.Stereotype" uid="01ec12fc-0000-0224-0000-000000000000"/>
+        <COMPID name="verify" mc="Infrastructure.Stereotype" uid="01ec12fc-0000-0229-0000-000000000000"/>
+        <COMPID name="refers" mc="Infrastructure.Stereotype" uid="01ec12fc-0000-0265-0000-000000000000"/>
+        <COMPID name="refine" mc="Infrastructure.Stereotype" uid="01ec12fc-0000-021f-0000-000000000000"/>
+        <COMPID name="related" mc="Infrastructure.Stereotype" uid="01ec12fc-0000-023d-0000-000000000000"/>
+        <COMPID name="implement" mc="Infrastructure.Stereotype" uid="01ec12fc-0000-0260-0000-000000000000"/>
+        <COMPID name="+influence" mc="Infrastructure.Stereotype" uid="01ec12fc-0000-0247-0000-000000000000"/>
+        <COMPID name="-influence" mc="Infrastructure.Stereotype" uid="01ec12fc-0000-024c-0000-000000000000"/>
+        <COMPID name="guarantee" mc="Infrastructure.Stereotype" uid="01ec12fc-0000-0251-0000-000000000000"/>
+        <COMPID name="homonym" mc="Infrastructure.Stereotype" uid="01ec12fc-0000-0238-0000-000000000000"/>
+        <COMPID name="measure" mc="Infrastructure.Stereotype" uid="01ec12fc-0000-0256-0000-000000000000"/>
+        <COMPID name="antonym" mc="Infrastructure.Stereotype" uid="01ec12fc-0000-0233-0000-000000000000"/>
+        <COMPID name="assigned" mc="Infrastructure.Stereotype" uid="01ec12fc-0000-025b-0000-000000000000"/>
+        <COMPID name="synonym" mc="Infrastructure.Stereotype" uid="01ec12fc-0000-022e-0000-000000000000"/>
+        <COMPID name="context" mc="Infrastructure.Stereotype" uid="01ec12fc-0000-0242-0000-000000000000"/>
+        <COMPID name="kind-of" mc="Infrastructure.Stereotype" uid="01ec1228-0000-12f8-0000-000000000000"/>
+      </COMP>
+      <COMP relation="OwnedReference">
+        <COMPID name="Analyst.AnalystElement" mc="Infrastructure.MetaclassReference" uid="2d98d6ca-5644-418a-9bae-94b5362d3c51"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

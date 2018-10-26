@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Stability" version="4">
+  <OBJECT>
+    <ID name="Stability" mc="Infrastructure.EnumeratedPropertyType" uid="00080cf0-0000-0032-0000-000000000000"/>
+    <PID name="LocalModule" mc="Infrastructure.ModuleComponent" uid="c7d36424-3484-41b5-8aab-3fdc929873bd"/>
+    <ATTRIBUTES>
+      <ATT name="BaseType">Enumerate</ATT>
+      <ATT name="Name"><![CDATA[Stability]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Litteral">
+        <OBJECT>
+          <ID name="Low" mc="Infrastructure.PropertyEnumerationLitteral" uid="00080cf0-0000-00c1-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Low]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="High" mc="Infrastructure.PropertyEnumerationLitteral" uid="00080cf0-0000-00c0-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[High]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
