@@ -193,11 +193,11 @@ Now, assume that the **Gateway IP** is **192.168.1.8**, then, when sending a req
 
 **Gateway** will route request to
 
-`http://192.168.1.9:8808/api/v1/movies/list`
+`GET http://192.168.1.9:8808/api/v1/movies/list`
 
 **OR**
 
-`http://192.168.1.10:8808/api/v1/movies/list`
+`GET http://192.168.1.10:8808/api/v1/movies/list`
 
 ***
 ### 4. REST API Response Format
