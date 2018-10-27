@@ -5,9 +5,9 @@ A **Microservices Architecture** consists of a collection of small, autonomous *
 Below is an example of designing and implementing **Microservices** using:
 * [**Gin Gonic**](https://github.com/gin-gonic/gin)
 * [**Traefik**](https://github.com/containous/traefik)
-* **MongoDB**
+* [**MongoDB**](https://www.mongodb.com/download-center)
 
-### 1. Movie Microservices Architecture
+### 1. Movie Microservices Example Architecture
 ![Movie Services](./docs/images/arc_movie_microservice_architecture.png)
 
 #### 1.1. Microservices Authentication Flow In General
@@ -90,7 +90,7 @@ $ swag init
 ##### -  Run services
 * Run the <strong>Authentication</strong> service
 ```sh
-$ cd user-microservice
+$ cd [go-microservices]/src/user-microservice
 $ go run main.go
 >> [GIN-debug] Listening and serving HTTP on :8808
 ```
@@ -107,7 +107,7 @@ $ go run main.go
 
 * Run the <strong>Movie</strong> service
 ```sh
-$ cd movie-microservice
+$ cd [go-microservices]/src/movie-microservice
 $ go run main.go
 >> [GIN-debug] Listening and serving HTTP on :8809
 ```
@@ -144,39 +144,39 @@ defaultEntryPoints = ["http", "https"]
 
 [frontends]
     [frontends.usermanagement]
-		entrypoints = ["http"]		
-		backend="usermanagement"
-		[frontends.usermanagement.routes.matchUrl]
-			rule="PathPrefixStrip:/seedotech.usermanagement"
+        entrypoints = ["http"]		
+        backend="usermanagement"
+        [frontends.usermanagement.routes.matchUrl]
+            rule="PathPrefixStrip:/seedotech.usermanagement"
 
-	[frontends.moviemanagement]
-		entrypoints = ["http"]		
-		backend="moviemanagement"
-		[frontends.moviemanagement.routes.matchUrl]
-			rule="PathPrefixStrip:/seedotech.moviemanagement"
+    [frontends.moviemanagement]
+        entrypoints = ["http"]		
+        backend="moviemanagement"
+        [frontends.moviemanagement.routes.matchUrl]
+            rule="PathPrefixStrip:/seedotech.moviemanagement"
 
 [backends]
     [backends.usermanagement]
         [backends.usermanagement.servers.main1]
-			url = "http://192.168.1.9:8808"
-			weight = 3
+            url = "http://192.168.1.9:8808"
+            weight = 3
 
-		[backends.usermanagement.servers.main2]
-			url = "http://192.168.1.10:8808"
-			weight = 1
+        [backends.usermanagement.servers.main2]
+            url = "http://192.168.1.10:8808"
+            weight = 1
 
-	[backends.moviemanagement]
+    [backends.moviemanagement]
         [backends.moviemanagement.servers.main1]
-			url = "http://192.168.1.9:8809"
-			weight = 3
+            url = "http://192.168.1.9:8809"
+            weight = 3
 
-		[backends.moviemanagement.servers.main2]
-			url = "http://192.168.1.10:8809"
-			weight = 1
+        [backends.moviemanagement.servers.main2]
+            url = "http://192.168.1.10:8809"
+            weight = 1
 
-		[backends.moviemanagement.servers.main3]
-			url = "http://192.168.1.12:8809"
-			weight = 2				            
+        [backends.moviemanagement.servers.main3]
+            url = "http://192.168.1.12:8809"
+            weight = 2				            
 ```
 * Start **traefik**
 ```sh
