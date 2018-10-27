@@ -41,7 +41,9 @@ Below is an example of designing and implementing **Microservices** using:
 $ mongod --dbpath="[your_database_path]"
 ```
 * Install neccessary Golang packages 
-> $ go get -u github.com/swaggo/swag/cmd/swag github.com/swaggo/gin-swagger github.com/swaggo/gin-swagger/swaggerFiles github.com/alecthomas/template github.com/gin-gonic/gin github.com/sirupsen/logrus gopkg.in/mgo.v2/bson github.com/natefinch/lumberjack
+```sh
+$ go get -u github.com/swaggo/swag/cmd/swag github.com/swaggo/gin-swagger github.com/swaggo/gin-swagger/swaggerFiles github.com/alecthomas/template github.com/gin-gonic/gin github.com/sirupsen/logrus gopkg.in/mgo.v2/bson github.com/natefinch/lumberjack
+```
 
 #### 2.2. Compile & run services
 ##### - Generate API documentation using Swag
@@ -55,7 +57,7 @@ $ git clone https://github.com/raycad/go-microservices.git
 
 * Go to the main application file of the service
 ```sh
-$ cd [main_application_directory]
+$ cd [go-microservices]/src/[app_directory]
 ```
 
 * Generate API document to the ./docs folder using <strong>swag cli</strong>
@@ -65,7 +67,7 @@ $ swag init
 <em><strong>NOTE:</strong> You can change host and basePath of the service by editting the file <strong>./docs/docs.go</strong></em>
 
 ##### - Change configuration file
-<em>Update values of file ./config/config.json</em>
+<em>Update values of file **./config/config.json**</em>
 ```sh
 {
     "port": ":8808",
@@ -129,7 +131,7 @@ $ go run main.go
 https://github.com/containous/traefik/releases/latest
 
 **3.2. Launch traefik**
-* Copy `traefik.toml` from [go-microservices]/traefik to traefik execution folder and update parameters.
+* Copy `traefik.toml` from <em>**[go-microservices]/traefik**</em> to traefik execution folder and update parameters.
 ```sh
 defaultEntryPoints = ["http", "https"]
 [entryPoints]
@@ -178,7 +180,7 @@ defaultEntryPoints = ["http", "https"]
             url = "http://192.168.1.12:8809"
             weight = 2				            
 ```
-* Start **traefik**
+* Run **traefik**
 ```sh
 $ ./traefik -c traefik.toml
 ```
@@ -204,7 +206,20 @@ Now, assume that the **Gateway IP** is **192.168.1.8**, then, when sending a req
 <strong>4.1.</strong> Successful response returns the application data through **HTTP 200 OK Message**
 ###### Example
 ```sh
-* Returning User array (Code 200)
+// User information
+type User struct {
+	ID       bson.ObjectId `bson:"_id" json:"id" example:"5bbdadf782ebac06a695a8e7"`
+	Name     string        `bson:"name" json:"name" example:"raycad"`
+	Password string        `bson:"password" json:"password" example:"raycad"`
+}
+
+// Token string
+type Token struct {
+	Token string `json:"token" example:"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoicmF5Y2FkIiwicm9sZSI6IiIsImV4cCI6MTUzOTI0OTc3OSwiaXNzIjoic2VlZG90ZWNoIn0.lVHq8J_0vfvECbplogAOCDCNh63ivTBOhya8KE6Ew_E"`
+}
+
+// Returning user array (Code 200)
+# @Success 200 {array} models.User
 [
   {
     "id": "5bbc4dd782ebac0a8d2c02fe",
@@ -218,7 +233,8 @@ Now, assume that the **Gateway IP** is **192.168.1.8**, then, when sending a req
   }
 ]
 
-* Returning token string (Code 200)
+// Returning token string (Code 200)
+# @Success 200 {object} models.Token
 {
     "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoicmF5Y2FkIiwicm9sZSI6IiIsImV4cCI6MTUzOTI0OTc3OSwiaXNzIjoic2VlZG90ZWNoIn0.lVHq8J_0vfvECbplogAOCDCNh63ivTBOhya8KE6Ew_E"
 }
@@ -232,13 +248,15 @@ type Error struct {
 }
 
 Example:
-* Returning HTTP StatusBadRequest (Code 400)
+// Returning HTTP StatusBadRequest (Code 400)
+# @Failure 400 {object} models.Error
 {
     "code": -1,
     "message": "User name is empty"
 }
 
-* Returning HTTP StatusNotFound (Code 404)
+// Returning HTTP StatusNotFound (Code 404)
+# @Failure 404 {object} models.Error
 {
     "code": -1,
     "message": "User not found"
