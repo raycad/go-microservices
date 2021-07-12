@@ -30,7 +30,7 @@ Below is an example of designing and implementing **Microservices** using:
 
 ***
 ### 2. Movie Service Build & Run
-#### 2.1. Setup development environement
+#### 2.1. Setup development environment
 * Install Golang
 * Install MongoDB
 
