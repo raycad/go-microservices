@@ -36,15 +36,6 @@ Below is an example of designing and implementing **Microservices** using:
 
     <https://docs.mongodb.com/manual/installation>
 
-* Start MongoDB
-```sh
-$ mongod --dbpath="[your_database_path]"
-```
-* Install neccessary Golang packages 
-```sh
-$ go get -u github.com/swaggo/swag/cmd/swag github.com/swaggo/gin-swagger github.com/swaggo/gin-swagger/swaggerFiles github.com/alecthomas/template github.com/gin-gonic/gin github.com/sirupsen/logrus gopkg.in/mgo.v2/bson github.com/natefinch/lumberjack
-```
-
 #### 2.2. Compile & run services
 ##### - Generate API documentation using Swag
 
@@ -66,140 +57,38 @@ $ swag init
 ```
 <em><strong>NOTE:</strong> You can change host and basePath of the service by editting the file <strong>./docs/docs.go</strong></em>
 
-##### - Change configuration file
-<em>Update values of file **./config/config.json**</em>
-```sh
-{
-    "port": ":8808",
-    "enableGinConsoleLog": true,
-    "enableGinFileLog": false,
-
-    "logFilename": "logs/server.log",
-    "logMaxSize": 10,
-    "logMaxBackups": 10,
-    "logMaxAge": 30,
-
-    "mgAddrs": "127.0.0.1:27017",
-    "mgDbName": "go-microservices",
-    "mgDbUsername": "",
-    "mgDbPassword": "",
-
-    "jwtSecretPassword": "raycad",
-    "issuer": "seedotech"
-}
-```
-
 ##### -  Run services
 * Run the <strong>Authentication</strong> service
 ```sh
-$ cd [go-microservices]/src/user-microservice
-$ go run main.go
->> [GIN-debug] Listening and serving HTTP on :8808
+$ docker-compose up --build -d
 ```
 
 * <strong>Authentication Swagger</strong>
+**NOTE:** Using the default admin account **admin/admin** to authenticate the services
 
 <em>http://localhost:8808/swagger/index.html</em>
-
-**NOTE:** Using the default admin account **admin/admin** to authenticate the services
 
 ![Communication Flows](./docs/images/swagger_user_rest_api.png)
 
 ![Communication Flows](./docs/images/swagger_user_rest_models.png)
 
-* Run the <strong>Movie</strong> service
-```sh
-$ cd [go-microservices]/src/movie-microservice
-$ go run main.go
->> [GIN-debug] Listening and serving HTTP on :8809
-```
-
-* <strong>Movie Swagger</strong>
-
 <em>http://localhost:8809/swagger/index.html</em>
-
-**NOTE:** Using the default admin account **admin/admin** to authenticate the services
 
 ![Communication Flows](./docs/images/swagger_movie_rest_api.png)
 
 ![Communication Flows](./docs/images/swagger_movie_rest_models.png)
 
-***
-### 3. Setup API Gateway
-**3.1. Download the latest traefik**
-
-https://github.com/containous/traefik/releases/latest
-
-**3.2. Launch traefik**
-* Copy `traefik.toml` from <em>**[go-microservices]/traefik**</em> to traefik execution folder and update parameters.
-```sh
-defaultEntryPoints = ["http", "https"]
-[entryPoints]
-    [entryPoints.http]
-    address = ":7777"
-
-[api]
-    entryPoint = "http"
-    dashboard = true
-
-[file]
-
-[frontends]
-    [frontends.usermanagement]
-        entrypoints = ["http"]		
-        backend="usermanagement"
-        [frontends.usermanagement.routes.matchUrl]
-            rule="PathPrefixStrip:/seedotech.usermanagement"
-
-    [frontends.moviemanagement]
-        entrypoints = ["http"]		
-        backend="moviemanagement"
-        [frontends.moviemanagement.routes.matchUrl]
-            rule="PathPrefixStrip:/seedotech.moviemanagement"
-
-[backends]
-    [backends.usermanagement]
-        [backends.usermanagement.servers.main1]
-            url = "http://192.168.1.9:8808"
-            weight = 3
-
-        [backends.usermanagement.servers.main2]
-            url = "http://192.168.1.10:8808"
-            weight = 1
-
-    [backends.moviemanagement]
-        [backends.moviemanagement.servers.main1]
-            url = "http://192.168.1.9:8809"
-            weight = 3
-
-        [backends.moviemanagement.servers.main2]
-            url = "http://192.168.1.10:8809"
-            weight = 1
-
-        [backends.moviemanagement.servers.main3]
-            url = "http://192.168.1.12:8809"
-            weight = 2				            
-```
-* Run **traefik**
-```sh
-$ ./traefik -c traefik.toml
-```
-
 **Traefik dashboard**
 
-![Traefik Dashboard](./docs/images/traefik_api_gateway.png)
+![Traefik Dashboard](./docs/images/traefik-v2-dashboard.png)
 
-Now, assume that the **Gateway IP** is **192.168.1.8**, then, when sending a request to the gateway like:
+Now, assume that the **Gateway IP** is **localhost**, then, when sending a request to the gateway like:
 
-`GET http://192.168.1.8:7777/seedotech.usermanagement/api/v1/movies/list`
+`GET http://localhost/movie-microservice/api/v1/movies/list`
 
 **Gateway** will route request to
 
-`GET http://192.168.1.9:8808/api/v1/movies/list`
-
-**OR**
-
-`GET http://192.168.1.10:8808/api/v1/movies/list`
+`GET http://192.168.80.5:8809/movie-microservice/api/v1/movies/list`
 
 ***
 ### 4. REST API Response Format

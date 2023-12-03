@@ -16,24 +16,40 @@
 {"level":"debug","msg":"map[title:GIN01 done:false id:1]","time":"2018-09-21T15:12:25+07:00"}
 {"level":"debug","msg":"map[id:1 title:GIN01 done:false]","time":"2018-09-21T15:12:25+07:00"}
 {"level":"debug","msg":"Can't connect to mongo, go error %vno reachable servers","time":"2018-09-25T03:33:14Z"}
-{"level":"debug","msg":"[ERROR]: \u003cnil\u003e","time":"2018-09-25T04:33:38Z"}
+{"level":"debug","msg":"[err]: \u003cnil\u003e","time":"2018-09-25T04:33:38Z"}
 {"level":"debug","msg":"Registered a new user = seedotech, password = test","time":"2018-09-26T05:21:45Z"}
 {"level":"debug","msg":"Registered a new user = seedotech, password = test","time":"2018-09-26T05:21:57Z"}
 {"level":"debug","msg":"Registered a new user = seedotech, password = test","time":"2018-09-26T05:21:59Z"}
 {"level":"debug","msg":"Registered a new user = seedotech, password = test","time":"2018-09-26T05:23:16Z"}
-{"level":"debug","msg":"[ERROR]: E11000 duplicate key error collection: go-microservices.user index: _name_ dup key: { : \"seedotech\" }","time":"2018-09-26T05:23:17Z"}
-{"level":"debug","msg":"[ERROR]: E11000 duplicate key error collection: go-microservices.user index: _name_ dup key: { : \"seedotech\" }","time":"2018-09-26T05:23:20Z"}
-{"level":"debug","msg":"[ERROR]: E11000 duplicate key error collection: go-microservices.user index: _name_ dup key: { : \"seedotech\" }","time":"2018-09-26T06:07:00Z"}
-{"level":"debug","msg":"[ERROR]: E11000 duplicate key error collection: go-microservices.user index: _name_ dup key: { : \"seedotech\" }","time":"2018-09-26T06:07:18Z"}
+{"level":"debug","msg":"[err]: E11000 duplicate key error collection: go-microservices.user index: _name_ dup key: { : \"seedotech\" }","time":"2018-09-26T05:23:17Z"}
+{"level":"debug","msg":"[err]: E11000 duplicate key error collection: go-microservices.user index: _name_ dup key: { : \"seedotech\" }","time":"2018-09-26T05:23:20Z"}
+{"level":"debug","msg":"[err]: E11000 duplicate key error collection: go-microservices.user index: _name_ dup key: { : \"seedotech\" }","time":"2018-09-26T06:07:00Z"}
+{"level":"debug","msg":"[err]: E11000 duplicate key error collection: go-microservices.user index: _name_ dup key: { : \"seedotech\" }","time":"2018-09-26T06:07:18Z"}
 {"level":"debug","msg":"Registered a new user = raycad, password = raycad","time":"2018-09-26T06:08:31Z"}
-{"level":"debug","msg":"[ERROR]: E11000 duplicate key error collection: go-microservices.user index: _name_ dup key: { : \"raycad\" }","time":"2018-09-26T06:08:34Z"}
-{"level":"debug","msg":"[ERROR]: parse 107.113.53.47:9006/api/v1/login: first path segment in URL cannot contain colon","time":"2018-09-27T01:58:02Z"}
-{"level":"debug","msg":"[ERROR]: ObjectIDs must be exactly 12 bytes long (got 0)","time":"2018-10-02T10:18:19Z"}
-{"level":"debug","msg":"[ERROR]: Post http://107.113.53.47:9006/api/v1/login: dial tcp 107.113.53.47:9006: connect: connection refused","time":"2018-10-02T12:49:57Z"}
-{"level":"debug","msg":"[ERROR]: Post http://107.113.53.47:9006/api/v1/login: dial tcp 107.113.53.47:9006: connect: connection refused","time":"2018-10-02T12:49:59Z"}
-{"level":"debug","msg":"[ERROR]: Post http://107.113.53.47:9006/api/v1/login: dial tcp 107.113.53.47:9006: connect: connection refused","time":"2018-10-02T12:50:00Z"}
-{"level":"debug","msg":"[ERROR]: Post http://107.113.53.47:9006/api/v1/login: dial tcp 107.113.53.47:9006: connect: connection refused","time":"2018-10-02T12:50:05Z"}
-{"level":"debug","msg":"[ERROR]: Post http://107.113.53.47:9006/api/v1/login: dial tcp 107.113.53.47:9006: connect: connection refused","time":"2018-10-02T12:50:06Z"}
-{"level":"debug","msg":"[ERROR]: Post http://107.113.53.47:9006/api/v1/login: dial tcp 107.113.53.47:9006: connect: connection refused","time":"2018-10-02T12:50:06Z"}
-{"level":"debug","msg":"[ERROR]: Post http://107.113.53.47:9006/api/v1/login: dial tcp 107.113.53.47:9006: connect: connection refused","time":"2018-10-02T12:50:06Z"}
-{"level":"debug","msg":"[ERROR]: Post http://107.113.53.47:9006/api/v1/login: dial tcp 107.113.53.47:9006: connect: connection refused","time":"2018-10-02T12:50:07Z"}
+{"level":"debug","msg":"[err]: E11000 duplicate key error collection: go-microservices.user index: _name_ dup key: { : \"raycad\" }","time":"2018-09-26T06:08:34Z"}
+{"level":"debug","msg":"[err]: parse 107.113.53.47:9006/api/v1/login: first path segment in URL cannot contain colon","time":"2018-09-27T01:58:02Z"}
+{"level":"debug","msg":"[err]: ObjectIDs must be exactly 12 bytes long (got 0)","time":"2018-10-02T10:18:19Z"}
+{"level":"debug","msg":"[err]: Post http://107.113.53.47:9006/api/v1/login: dial tcp 107.113.53.47:9006: connect: connection refused","time":"2018-10-02T12:49:57Z"}
+{"level":"debug","msg":"[err]: Post http://107.113.53.47:9006/api/v1/login: dial tcp 107.113.53.47:9006: connect: connection refused","time":"2018-10-02T12:49:59Z"}
+{"level":"debug","msg":"[err]: Post http://107.113.53.47:9006/api/v1/login: dial tcp 107.113.53.47:9006: connect: connection refused","time":"2018-10-02T12:50:00Z"}
+{"level":"debug","msg":"[err]: Post http://107.113.53.47:9006/api/v1/login: dial tcp 107.113.53.47:9006: connect: connection refused","time":"2018-10-02T12:50:05Z"}
+{"level":"debug","msg":"[err]: Post http://107.113.53.47:9006/api/v1/login: dial tcp 107.113.53.47:9006: connect: connection refused","time":"2018-10-02T12:50:06Z"}
+{"level":"debug","msg":"[err]: Post http://107.113.53.47:9006/api/v1/login: dial tcp 107.113.53.47:9006: connect: connection refused","time":"2018-10-02T12:50:06Z"}
+{"level":"debug","msg":"[err]: Post http://107.113.53.47:9006/api/v1/login: dial tcp 107.113.53.47:9006: connect: connection refused","time":"2018-10-02T12:50:06Z"}
+{"level":"debug","msg":"[err]: Post http://107.113.53.47:9006/api/v1/login: dial tcp 107.113.53.47:9006: connect: connection refused","time":"2018-10-02T12:50:07Z"}
+{"level":"debug","msg":"Can't connect to mongo, go error: no reachable servers","time":"2023-12-03T13:00:14+07:00"}
+{"level":"debug","msg":"Can't connect to mongo, go error: no reachable servers","time":"2023-12-03T13:01:22+07:00"}
+{"level":"debug","msg":"Can't connect to mongo, go error: no reachable servers","time":"2023-12-03T13:07:19+07:00"}
+{"level":"debug","msg":"Can't connect to mongo, go error: no reachable servers","time":"2023-12-03T13:08:05+07:00"}
+{"level":"error","msg":"Can't connect to mongo, go error: no reachable servers","time":"2023-12-03T13:08:47+07:00"}
+{"level":"error","msg":"Can't connect to mongo, go error: no reachable servers","time":"2023-12-03T13:12:37+07:00"}
+{"level":"info","msg":"Connected to MongoDB!","time":"2023-12-03T13:41:38+07:00"}
+{"level":"info","msg":"Connected to MongoDB!","time":"2023-12-03T13:42:18+07:00"}
+{"level":"info","msg":"Connected to MongoDB!","time":"2023-12-03T13:42:43+07:00"}
+{"level":"info","msg":"Connected to MongoDB!","time":"2023-12-03T14:01:24+07:00"}
+{"level":"info","msg":"Connected to MongoDB!","time":"2023-12-03T14:16:40+07:00"}
+{"level":"info","msg":"Connected to MongoDB!","time":"2023-12-03T18:46:35+07:00"}
+{"level":"info","msg":"Connected to MongoDB!","time":"2023-12-03T19:00:52+07:00"}
+{"level":"error","msg":"Failed to ping MongoDB:server selection error: server selection timeout, current topology: { Type: Unknown, Servers: [{ Addr: mongodb:27017, Type: Unknown, Last error: dial tcp: lookup mongodb on 127.0.0.53:53: server misbehaving }, ] }","time":"2023-12-03T20:06:00+07:00"}
+{"level":"error","msg":"Failed to ping MongoDB:server selection error: server selection timeout, current topology: { Type: Unknown, Servers: [{ Addr: mongodb:27017, Type: Unknown, Last error: dial tcp: lookup mongodb on 127.0.0.53:53: server misbehaving }, ] }","time":"2023-12-03T20:07:04+07:00"}
+{"level":"info","msg":"Connected to MongoDB!","time":"2023-12-03T20:07:27+07:00"}

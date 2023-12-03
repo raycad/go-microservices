@@ -1,0 +1,49 @@
+version: '3'
+services:
+  mongodb:
+    image: mongodb/mongodb-community-server
+    container_name: mongodb
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./data:/data/db
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: admin_password
+
+  traefik:
+    image: "traefik:v2.6"
+    command:
+      - "--api.insecure=true"
+      - "--providers.docker=true"
+      - "--providers.docker.exposedbydefault=false"
+    ports:
+      - "80:80"
+      - "8080:8080"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  movie-microservice:
+    container_name: movie-microservice
+    build:
+      context: ./src/movie-microservice
+    ports:
+      - "8809:8809"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.movie-microservice.rule=Host(`localhost`) && PathPrefix(`/movie-microservice`)"
+      - "traefik.http.routers.movie-microservice.entrypoints=http"
+      - "traefik.http.services.movie-microservice.loadBalancer.server.port=8809"
+
+  user-microservice:
+    container_name: user-microservice
+    build:
+      context: ./src/user-microservice
+    ports:
+      - "8808:8808"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.user-microservice.rule=Host(`localhost`) && PathPrefix(`/user-microservice`)"
+      - "traefik.http.routers.user-microservice.entrypoints=traefik"
+      - "traefik.http.services.user-microservice.loadBalancer.server.port=8808"

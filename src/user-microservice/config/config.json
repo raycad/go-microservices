@@ -8,10 +8,10 @@
     "logMaxBackups": 10,
     "logMaxAge": 30,
 
-    "mgAddrs": "127.0.0.1:27017",
+    "mgAddrs": "mongodb:27017",
     "mgDbName": "go-microservices",
-    "mgDbUsername": "",
-    "mgDbPassword": "",
+    "mgDbUsername": "admin",
+    "mgDbPassword": "admin_password",
 
     "jwtSecretPassword": "raycad",
     "issuer": "seedotech"

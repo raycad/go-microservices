@@ -6,48 +6,59 @@
 package databases
 
 import (
+	"context"
+	"fmt"
 	"time"
 
-	"../common"
+	"github.com/raycad/go-microservices/tree/master/src/movie-microservice/common"
 	log "github.com/sirupsen/logrus"
-	mgo "gopkg.in/mgo.v2"
+	"go.mongodb.org/mongo-driver/mongo"
+	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
 // MongoDB manages MongoDB connection
 type MongoDB struct {
-	MgDbSession  *mgo.Session
+	MgDB         *mongo.Database
 	Databasename string
 }
 
 // Init initializes mongo database
 func (db *MongoDB) Init() error {
-	db.Databasename = common.Config.MgDbName
+	ctx, cancel := context.WithTimeout(context.Background(), 60*time.Second)
+	defer cancel()
 
-	// DialInfo holds options for establishing a session with a MongoDB cluster.
-	dialInfo := &mgo.DialInfo{
-		Addrs:    []string{common.Config.MgAddrs}, // Get HOST + PORT
-		Timeout:  60 * time.Second,
-		Database: db.Databasename,            // Database name
-		Username: common.Config.MgDbUsername, // Username
-		Password: common.Config.MgDbPassword, // Password
-	}
+	// Set your MongoDB connection URI with the appropriate values
+	connectionURI := fmt.Sprintf("mongodb://%s:%s@%s", common.Config.MgDbUsername, common.Config.MgDbPassword, common.Config.MgAddrs)
 
-	// Create a session which maintains a pool of socket connections
-	// to the DB MongoDB database.
-	var err error
-	db.MgDbSession, err = mgo.DialWithInfo(dialInfo)
+	// Set up options to pass to the Connect function
+	clientOptions := options.Client().ApplyURI(connectionURI)
 
+	// Connect to MongoDB
+	client, err := mongo.Connect(ctx, clientOptions)
 	if err != nil {
-		log.Debug("Can't connect to mongo, go error: ", err)
+		log.Error("Failed to connect to MongoDB:", err)
+
 		return err
 	}
 
-	return err
+	// Ensure the client is connected and ping the server
+	err = client.Ping(ctx, nil)
+	if err != nil {
+		log.Error("Failed to ping MongoDB:", err)
+
+		return err
+	}
+
+	log.Info("Connected to MongoDB!")
+
+	db.MgDB = client.Database(common.Config.MgDbName)
+
+	return nil
 }
 
 // Close the existing connection
 func (db *MongoDB) Close() {
-	if db.MgDbSession != nil {
-		db.MgDbSession.Close()
+	if db.MgDB != nil {
+		db.MgDB.Client().Disconnect(context.Background())
 	}
 }

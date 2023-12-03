@@ -9,15 +9,15 @@ import (
 	"io"
 	"os"
 
-	"./common"
-	"./controllers"
-	"./databases"
 	"github.com/gin-gonic/contrib/jwt"
 	"github.com/gin-gonic/gin"
+	"github.com/raycad/go-microservices/tree/master/src/user-microservice/common"
+	"github.com/raycad/go-microservices/tree/master/src/user-microservice/controllers"
+	"github.com/raycad/go-microservices/tree/master/src/user-microservice/databases"
 
-	_ "./docs"
-	"github.com/swaggo/gin-swagger"
-	"github.com/swaggo/gin-swagger/swaggerFiles"
+	_ "github.com/raycad/go-microservices/tree/master/src/user-microservice/docs"
+	swaggerFiles "github.com/swaggo/files"
+	ginSwagger "github.com/swaggo/gin-swagger"
 )
 
 // Main manages main golang application
@@ -77,7 +77,7 @@ func main() {
 
 	c := controllers.User{}
 	// Simple group: v1
-	v1 := m.router.Group("/api/v1")
+	v1 := m.router.Group("/user-microservice/api/v1")
 	{
 		admin := v1.Group("/admin")
 		{

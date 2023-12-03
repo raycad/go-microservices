@@ -8,11 +8,11 @@ package controllers
 import (
 	"net/http"
 
-	"../common"
-	"../daos"
-	"../models"
-	"../utils"
 	"github.com/gin-gonic/gin"
+	"github.com/raycad/go-microservices/tree/master/src/user-microservice/common"
+	"github.com/raycad/go-microservices/tree/master/src/user-microservice/daos"
+	"github.com/raycad/go-microservices/tree/master/src/user-microservice/models"
+	"github.com/raycad/go-microservices/tree/master/src/user-microservice/utils"
 	log "github.com/sirupsen/logrus"
 	"gopkg.in/mgo.v2/bson"
 )
