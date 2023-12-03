@@ -8,7 +8,7 @@ package models
 import (
 	"errors"
 
-	"../common"
+	"github.com/raycad/go-microservices/tree/master/src/user-microservice/common"
 	"gopkg.in/mgo.v2/bson"
 )
 

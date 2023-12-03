@@ -7,14 +7,15 @@ package controllers
 
 import (
 	"encoding/json"
+	"fmt"
 	"net/http"
 	"net/url"
 
-	"../common"
-	"../daos"
-	"../models"
+	"github.com/apex/log"
 	"github.com/gin-gonic/gin"
-	log "github.com/sirupsen/logrus"
+	"github.com/raycad/go-microservices/tree/master/src/movie-microservice/common"
+	"github.com/raycad/go-microservices/tree/master/src/movie-microservice/daos"
+	"github.com/raycad/go-microservices/tree/master/src/movie-microservice/models"
 	"gopkg.in/mgo.v2/bson"
 )
 
@@ -43,11 +44,11 @@ func (m *Movie) Login(ctx *gin.Context) {
 		"password": {password},
 	}
 
-	var authAddr string = common.Config.AuthAddr + "/api/v1/admin/auth"
+	var authAddr string = common.Config.AuthAddr + "/user-microservice/api/v1/admin/auth"
 	resp, err := http.PostForm(authAddr, formData)
 	if err != nil {
-		ctx.JSON(http.StatusUnauthorized, models.Error{common.StatusCodeUnknown, err.Error()})
-		log.Debug("[ERROR]: ", err)
+		ctx.JSON(http.StatusUnauthorized, models.Error{Code: common.StatusCodeUnknown, Message: err.Error()})
+		log.Debug(fmt.Sprintf("[err]: %v", err))
 		return
 	}
 
@@ -83,10 +84,10 @@ func (m *Movie) AddMovie(ctx *gin.Context) {
 	movie.ID = bson.NewObjectId()
 	err := m.movieDAO.Insert(movie)
 	if err == nil {
-		ctx.JSON(http.StatusOK, models.Message{"Successfully"})
+		ctx.JSON(http.StatusOK, models.Message{Message: "Successfully"})
 	} else {
-		ctx.JSON(http.StatusForbidden, models.Error{common.StatusCodeUnknown, err.Error()})
-		log.Debug("[ERROR]: ", err)
+		ctx.JSON(http.StatusForbidden, models.Error{Code: common.StatusCodeUnknown, Message: err.Error()})
+		log.Debug(fmt.Sprintf("[err]: %v", err))
 	}
 }
 
@@ -108,7 +109,7 @@ func (m *Movie) ListMovies(ctx *gin.Context) {
 	if err == nil {
 		ctx.JSON(http.StatusOK, movies)
 	} else {
-		ctx.JSON(http.StatusNotFound, models.Error{common.StatusCodeUnknown, "Cannot retrieve movie information"})
-		log.Debug("[ERROR]: ", err)
+		ctx.JSON(http.StatusNotFound, models.Error{Code: common.StatusCodeUnknown, Message: "Cannot retrieve movie information"})
+		log.Debug(fmt.Sprintf("[err]: %v", err))
 	}
 }

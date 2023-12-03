@@ -6,10 +6,12 @@
 package daos
 
 import (
-	"../common"
-	"../databases"
-	"../models"
-	"../utils"
+	"context"
+
+	"github.com/raycad/go-microservices/tree/master/src/user-microservice/common"
+	"github.com/raycad/go-microservices/tree/master/src/user-microservice/databases"
+	"github.com/raycad/go-microservices/tree/master/src/user-microservice/models"
+	"github.com/raycad/go-microservices/tree/master/src/user-microservice/utils"
 	"gopkg.in/mgo.v2/bson"
 )
 
@@ -20,14 +22,16 @@ type User struct {
 
 // GetAll gets the list of Users
 func (u *User) GetAll() ([]models.User, error) {
-	sessionCopy := databases.Database.MgDbSession.Copy()
-	defer sessionCopy.Close()
-
-	// Get a collection to execute the query against.
-	collection := sessionCopy.DB(databases.Database.Databasename).C(common.ColUsers)
+	collection := databases.Database.MgDB.Collection(common.ColUsers)
 
 	var users []models.User
-	err := collection.Find(bson.M{}).All(&users)
+	cursor, err := collection.Find(context.TODO(), bson.M{})
+	if err != nil {
+		return nil, err
+	}
+	defer cursor.Close(context.TODO())
+
+	err = cursor.All(context.TODO(), &users)
 	return users, err
 }
 
@@ -39,80 +43,55 @@ func (u *User) GetByID(id string) (models.User, error) {
 		return models.User{}, err
 	}
 
-	sessionCopy := databases.Database.MgDbSession.Copy()
-	defer sessionCopy.Close()
-
-	// Get a collection to execute the query against.
-	collection := sessionCopy.DB(databases.Database.Databasename).C(common.ColUsers)
+	collection := databases.Database.MgDB.Collection(common.ColUsers)
 
 	var user models.User
-	err = collection.FindId(bson.ObjectIdHex(id)).One(&user)
+	err = collection.FindOne(context.TODO(), bson.M{"_id": bson.ObjectIdHex(id)}).Decode(&user)
 	return user, err
 }
 
-// DeleteByID finds a User by its id
+// DeleteByID finds a User by its ID and removes it
 func (u *User) DeleteByID(id string) error {
-	var err error
-	err = u.utils.ValidateObjectID(id)
+	err := u.utils.ValidateObjectID(id)
 	if err != nil {
 		return err
 	}
 
-	sessionCopy := databases.Database.MgDbSession.Copy()
-	defer sessionCopy.Close()
+	collection := databases.Database.MgDB.Collection(common.ColUsers)
 
-	// Get a collection to execute the query against.
-	collection := sessionCopy.DB(databases.Database.Databasename).C(common.ColUsers)
-
-	err = collection.Remove(bson.M{"_id": bson.ObjectIdHex(id)})
+	_, err = collection.DeleteOne(context.TODO(), bson.M{"_id": bson.ObjectIdHex(id)})
 	return err
 }
 
 // Login User
 func (u *User) Login(name string, password string) (models.User, error) {
-	sessionCopy := databases.Database.MgDbSession.Copy()
-	defer sessionCopy.Close()
-
-	// Get a collection to execute the query against.
-	collection := sessionCopy.DB(databases.Database.Databasename).C(common.ColUsers)
+	collection := databases.Database.MgDB.Collection(common.ColUsers)
 
 	var user models.User
-	err := collection.Find(bson.M{"$and": []bson.M{bson.M{"name": name}, bson.M{"password": password}}}).One(&user)
+	err := collection.FindOne(context.TODO(), bson.M{"name": name, "password": password}).Decode(&user)
 	return user, err
 }
 
-// Insert adds a new User into database'
+// Insert adds a new User into the database
 func (u *User) Insert(user models.User) error {
-	sessionCopy := databases.Database.MgDbSession.Copy()
-	defer sessionCopy.Close()
+	collection := databases.Database.MgDB.Collection(common.ColUsers)
 
-	// Get a collection to execute the query against.
-	collection := sessionCopy.DB(databases.Database.Databasename).C(common.ColUsers)
-
-	err := collection.Insert(&user)
+	_, err := collection.InsertOne(context.TODO(), &user)
 	return err
 }
 
-// Delete remove an existing User
+// Delete removes an existing User
 func (u *User) Delete(user models.User) error {
-	sessionCopy := databases.Database.MgDbSession.Copy()
-	defer sessionCopy.Close()
+	collection := databases.Database.MgDB.Collection(common.ColUsers)
 
-	// Get a collection to execute the query against.
-	collection := sessionCopy.DB(databases.Database.Databasename).C(common.ColUsers)
-
-	err := collection.Remove(&user)
+	_, err := collection.DeleteOne(context.TODO(), bson.M{"_id": user.ID})
 	return err
 }
 
 // Update modifies an existing User
 func (u *User) Update(user models.User) error {
-	sessionCopy := databases.Database.MgDbSession.Copy()
-	defer sessionCopy.Close()
+	collection := databases.Database.MgDB.Collection(common.ColUsers)
 
-	// Get a collection to execute the query against.
-	collection := sessionCopy.DB(databases.Database.Databasename).C(common.ColUsers)
-
-	err := collection.UpdateId(user.ID, &user)
+	_, err := collection.ReplaceOne(context.TODO(), bson.M{"_id": user.ID}, &user)
 	return err
 }

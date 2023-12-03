@@ -9,15 +9,15 @@ import (
 	"io"
 	"os"
 
-	"./common"
-	"./controllers"
-	"./databases"
 	"github.com/gin-gonic/contrib/jwt"
 	"github.com/gin-gonic/gin"
+	"github.com/raycad/go-microservices/tree/master/src/movie-microservice/common"
+	"github.com/raycad/go-microservices/tree/master/src/movie-microservice/controllers"
+	"github.com/raycad/go-microservices/tree/master/src/movie-microservice/databases"
 
-	_ "./docs"
-	"github.com/swaggo/gin-swagger"
-	"github.com/swaggo/gin-swagger/swaggerFiles"
+	_ "github.com/raycad/go-microservices/tree/master/src/movie-microservice/docs"
+	swaggerfiles "github.com/swaggo/files"
+	ginSwagger "github.com/swaggo/gin-swagger"
 )
 
 // Main manages main golang application
@@ -78,7 +78,7 @@ func main() {
 	c := controllers.Movie{}
 
 	// Simple group: v1
-	v1 := m.router.Group("/api/v1")
+	v1 := m.router.Group("/movie-microservice/api/v1")
 	{
 		v1.POST("/login", c.Login)
 		v1.GET("/movies/list", c.ListMovies)
@@ -88,6 +88,6 @@ func main() {
 		v1.POST("/movies", c.AddMovie)
 	}
 
-	m.router.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
+	m.router.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerfiles.Handler))
 	m.router.Run(common.Config.Port)
 }

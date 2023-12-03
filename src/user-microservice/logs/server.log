@@ -37,3 +37,7 @@
 {"level":"debug","msg":"Registered a new user = seedotech, password = raycad","time":"2018-10-01T11:02:33Z"}
 {"level":"debug","msg":"[ERROR]: E11000 duplicate key error collection: go-microservices.users index: _name_ dup key: { : \"seedotech\" }","time":"2018-10-01T11:02:35Z"}
 {"level":"debug","msg":"Registered a new user = raycad, password = raycad","time":"2018-10-01T11:02:48Z"}
+{"level":"error","msg":"Failed to connect to MongoDB:error validating uri: username required if URI contains user info","time":"2023-12-03T14:00:29+07:00"}
+{"level":"info","msg":"Connected to MongoDB!","time":"2023-12-03T14:00:51+07:00"}
+{"level":"info","msg":"Connected to MongoDB!","time":"2023-12-03T14:16:05+07:00"}
+{"level":"info","msg":"Connected to MongoDB!","time":"2023-12-03T19:00:48+07:00"}
